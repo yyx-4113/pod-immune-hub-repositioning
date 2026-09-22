@@ -1,0 +1,8 @@
+gene,uniprot,protein,n_pdb_entries,pdb_ids,dockable_experimental,note
+ADORA3,P0DMS8,Adenosine receptor A3,5,8X16;8X17;9EBH;9EBI;9EHS,True,
+TMIGD3,P0DMS9,Transmembrane domain-containing protein TMIGD3,0,,False,no experimental structure -> use AlphaFold model or skip docking (report as limitation)
+COL13A1,Q5TAT6,Collagen alpha-1(XIII) chain,0,,False,no experimental structure -> use AlphaFold model or skip docking (report as limitation)
+SPATA13,Q96N96,Spermatogenesis-associated protein 13,0,,False,no experimental structure -> use AlphaFold model or skip docking (report as limitation)
+COL18A1,P39060,Collagen alpha-1(XVIII) chain,9,1BNL;3HON;3HSH;9BNB;9BNC;9BND;9BNE;9BNF;9BNG,True,
+CD63,P08962,CD63 antigen,2,9HQ5;9HUR,True,
+LTF,P02788,Lactotransferrin,10,1B0L;1BKA;1CB6;1DSN;1EH3;1FCK;1H43;1H44;1H45;1HSE,True,

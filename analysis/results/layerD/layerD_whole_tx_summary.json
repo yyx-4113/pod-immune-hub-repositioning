@@ -1,0 +1,465 @@
+{
+  "tag": "whole_tx",
+  "n_dis_up": 737,
+  "n_dis_down": 996,
+  "libraries": {
+    "chem": {
+      "n_signatures": 3769,
+      "n_perturbagens": 1069,
+      "universe_genes": 6474,
+      "disease_up_in_universe": 82,
+      "disease_down_in_universe": 142,
+      "null": {
+        "n_perm": 3000,
+        "null_mean_rev": 0.4975846069415382,
+        "null_sd_rev": 0.5213890840501293,
+        "null_p95": 1.547556874166758,
+        "null_max": 4.156589496596205
+      },
+      "n_druglevel_fdr05": 0,
+      "n_druglevel_consistent_2cell": 0
+    },
+    "ligand": {
+      "n_signatures": 96,
+      "n_perturbagens": 96,
+      "universe_genes": 4711,
+      "disease_up_in_universe": 83,
+      "disease_down_in_universe": 102,
+      "null": {
+        "n_perm": 3000,
+        "null_mean_rev": 0.664403616061248,
+        "null_sd_rev": 0.5273758215719926,
+        "null_p95": 1.690848101603755,
+        "null_max": 4.331500451441118
+      },
+      "n_druglevel_fdr05": 0,
+      "n_druglevel_consistent_2cell": 0
+    },
+    "crispr_ko": {
+      "n_signatures": 5212,
+      "n_genes": 5210,
+      "universe_genes": 9440,
+      "disease_up_in_universe": 138,
+      "disease_down_in_universe": 238,
+      "null": {
+        "n_perm": 3000,
+        "null_mean_rev": 0.7060955964128894,
+        "null_sd_rev": 0.5533044951150102,
+        "null_p95": 1.7897073659001526,
+        "null_max": 4.350958498925482
+      },
+      "n_genelevel_fdr05": 0
+    }
+  },
+  "positive_control_qc": {
+    "chem": {
+      "dexamethasone": {
+        "rank": 52,
+        "n_drugs": 1069,
+        "percentile": 95.14,
+        "median_net": 0.75,
+        "n_cell_lines": 2,
+        "min_fdr": 1.0
+      },
+      "hydrocortisone": {
+        "rank": 86,
+        "n_drugs": 1069,
+        "percentile": 91.96,
+        "median_net": 0.601,
+        "n_cell_lines": 2,
+        "min_fdr": 1.0
+      },
+      "prednisolone": {
+        "rank": 137,
+        "n_drugs": 1069,
+        "percentile": 87.18,
+        "median_net": 0.451,
+        "n_cell_lines": 2,
+        "min_fdr": 1.0
+      },
+      "budesonide": {
+        "rank": 172,
+        "n_drugs": 1069,
+        "percentile": 83.91,
+        "median_net": 0.385,
+        "n_cell_lines": 6,
+        "min_fdr": 1.0
+      },
+      "fluticasone": {
+        "rank": 288,
+        "n_drugs": 1069,
+        "percentile": 73.06,
+        "median_net": 0.222,
+        "n_cell_lines": 4,
+        "min_fdr": 1.0
+      },
+      "betamethasone": {
+        "rank": 97,
+        "n_drugs": 1069,
+        "percentile": 90.93,
+        "median_net": 0.576,
+        "n_cell_lines": 2,
+        "min_fdr": 1.0
+      },
+      "triamcinolone": {
+        "rank": 316,
+        "n_drugs": 1069,
+        "percentile": 70.44,
+        "median_net": 0.195,
+        "n_cell_lines": 3,
+        "min_fdr": 1.0
+      },
+      "cyclosporine": {
+        "rank": 811,
+        "n_drugs": 1069,
+        "percentile": 24.13,
+        "median_net": -0.123,
+        "n_cell_lines": 7,
+        "min_fdr": 1.0
+      },
+      "sirolimus": {
+        "rank": 221,
+        "n_drugs": 1069,
+        "percentile": 79.33,
+        "median_net": 0.304,
+        "n_cell_lines": 8,
+        "min_fdr": 1.0
+      },
+      "tacrolimus": {
+        "rank": 231,
+        "n_drugs": 1069,
+        "percentile": 78.39,
+        "median_net": 0.29,
+        "n_cell_lines": 2,
+        "min_fdr": 1.0
+      },
+      "simvastatin": {
+        "rank": 527,
+        "n_drugs": 1069,
+        "percentile": 50.7,
+        "median_net": 0.0,
+        "n_cell_lines": 8,
+        "min_fdr": 1.0
+      },
+      "rosuvastatin": {
+        "rank": 944,
+        "n_drugs": 1069,
+        "percentile": 11.69,
+        "median_net": -0.336,
+        "n_cell_lines": 3,
+        "min_fdr": 1.0
+      },
+      "naproxen": {
+        "rank": 969,
+        "n_drugs": 1069,
+        "percentile": 9.35,
+        "median_net": -0.398,
+        "n_cell_lines": 1,
+        "min_fdr": 1.0
+      },
+      "indomethacin": {
+        "rank": 577,
+        "n_drugs": 1069,
+        "percentile": 46.02,
+        "median_net": 0.0,
+        "n_cell_lines": 2,
+        "min_fdr": 1.0
+      },
+      "ketorolac": {
+        "rank": 778,
+        "n_drugs": 1069,
+        "percentile": 27.22,
+        "median_net": -0.084,
+        "n_cell_lines": 2,
+        "min_fdr": 1.0
+      }
+    },
+    "ligand": {}
+  },
+  "positive_control_class_test": {
+    "ligand": {
+      "n_controls_found": 0
+    },
+    "crispr_ko": {
+      "n_controls_found": 18,
+      "controls": [
+        "nfkb1",
+        "rela",
+        "stat3",
+        "il1rap",
+        "nfkbiz",
+        "il6",
+        "il10ra",
+        "tnfrsf1a",
+        "ltf",
+        "cd63",
+        "adora3",
+        "col18a1"
+      ],
+      "mean_percentile_controls": 33.21,
+      "null_mean_percentile": 50.01,
+      "null_sd": 6.8,
+      "z": -2.472,
+      "perm_p_one_sided": 0.9934003299835008,
+      "mannwhitney_p": 0.9932572775283933,
+      "n_perm": 20000
+    }
+  },
+  "top25": [
+    {
+      "library": "chem",
+      "perturbagen": "piribedil dihydrochloride",
+      "cell_line": "A549",
+      "dose": "10.0",
+      "net_score": 4.241885063095505,
+      "fdr": 1.0,
+      "z_vs_null": 7.181394031245135,
+      "emp_p": 0.0003332222592469177
+    },
+    {
+      "library": "ligand",
+      "perturbagen": "scf-skbr3",
+      "cell_line": "",
+      "dose": "",
+      "net_score": 3.3514497554307803,
+      "fdr": 0.12702853920925014,
+      "z_vs_null": 5.916453265516014,
+      "emp_p": 0.000999666777740753
+    },
+    {
+      "library": "ligand",
+      "perturbagen": "epg-skbr3",
+      "cell_line": "",
+      "dose": "",
+      "net_score": 3.312628878143592,
+      "fdr": 0.12702853920925014,
+      "z_vs_null": 5.450129885529078,
+      "emp_p": 0.000999666777740753
+    },
+    {
+      "library": "chem",
+      "perturbagen": "cyclopiazonic acid",
+      "cell_line": "MCF7",
+      "dose": "10.0",
+      "net_score": 2.7064903590643032,
+      "fdr": 1.0,
+      "z_vs_null": 4.236578439586949,
+      "emp_p": 0.002999000333222259
+    },
+    {
+      "library": "chem",
+      "perturbagen": "clebopride maleate",
+      "cell_line": "HA1E",
+      "dose": "10.0",
+      "net_score": 2.588053462579285,
+      "fdr": 1.0,
+      "z_vs_null": 4.009421983673056,
+      "emp_p": 0.004665111629456847
+    },
+    {
+      "library": "chem",
+      "perturbagen": "hydroxytacrine maleate (r,s)",
+      "cell_line": "A375",
+      "dose": "10.0",
+      "net_score": 2.375279252554674,
+      "fdr": 1.0,
+      "z_vs_null": 3.601330950443534,
+      "emp_p": 0.006331222925691436
+    },
+    {
+      "library": "chem",
+      "perturbagen": "lasalocid sodium",
+      "cell_line": "A375",
+      "dose": "10.0",
+      "net_score": 2.3514515974537296,
+      "fdr": 1.0,
+      "z_vs_null": 4.286057739370249,
+      "emp_p": 0.0026657780739753416
+    },
+    {
+      "library": "ligand",
+      "perturbagen": "ifna-bt20",
+      "cell_line": "",
+      "dose": "",
+      "net_score": 2.28118307690828,
+      "fdr": 0.4365672905196343,
+      "z_vs_null": 3.138379030643489,
+      "emp_p": 0.011996001332889037
+    },
+    {
+      "library": "chem",
+      "perturbagen": "digoxin",
+      "cell_line": "HA1E",
+      "dose": "10.0",
+      "net_score": 2.2051799063396422,
+      "fdr": 1.0,
+      "z_vs_null": 3.472255723635488,
+      "emp_p": 0.007664111962679107
+    },
+    {
+      "library": "chem",
+      "perturbagen": "cymarin",
+      "cell_line": "HCC515",
+      "dose": "10.0",
+      "net_score": 2.1203250315416438,
+      "fdr": 1.0,
+      "z_vs_null": 3.112340619014736,
+      "emp_p": 0.01166277907364212
+    },
+    {
+      "library": "chem",
+      "perturbagen": "ala-ala-phe-cmk",
+      "cell_line": "A549",
+      "dose": "10.0",
+      "net_score": 2.1044571162420227,
+      "fdr": 1.0,
+      "z_vs_null": 3.3876214733599044,
+      "emp_p": 0.007997334221926024
+    },
+    {
+      "library": "chem",
+      "perturbagen": "ro 60-0175",
+      "cell_line": "HA1E",
+      "dose": "10.0",
+      "net_score": 2.0609655861508362,
+      "fdr": 1.0,
+      "z_vs_null": 4.183675907179402,
+      "emp_p": 0.003998667110963012
+    },
+    {
+      "library": "ligand",
+      "perturbagen": "bfgf-bt20",
+      "cell_line": "",
+      "dose": "",
+      "net_score": 2.0489460737339393,
+      "fdr": 0.4365672905196343,
+      "z_vs_null": 2.8686673088753025,
+      "emp_p": 0.018327224258580473
+    },
+    {
+      "library": "chem",
+      "perturbagen": "prozac",
+      "cell_line": "A549",
+      "dose": "10.0",
+      "net_score": 2.010918742577535,
+      "fdr": 1.0,
+      "z_vs_null": 3.39905426186371,
+      "emp_p": 0.007997334221926024
+    },
+    {
+      "library": "ligand",
+      "perturbagen": "hbegf-hs578t",
+      "cell_line": "",
+      "dose": "",
+      "net_score": 1.9988490214722718,
+      "fdr": 0.4365672905196343,
+      "z_vs_null": 3.2044121243029355,
+      "emp_p": 0.011329556814395202
+    },
+    {
+      "library": "chem",
+      "perturbagen": "ouabain",
+      "cell_line": "HT29",
+      "dose": "10.0",
+      "net_score": 1.9848414109601635,
+      "fdr": 1.0,
+      "z_vs_null": 3.3197010543279677,
+      "emp_p": 0.00866377874041986
+    },
+    {
+      "library": "chem",
+      "perturbagen": "bu 239 hydrochloride",
+      "cell_line": "PC3",
+      "dose": "10.0",
+      "net_score": 1.9748483897566187,
+      "fdr": 1.0,
+      "z_vs_null": 2.8333231899290166,
+      "emp_p": 0.017994001999333556
+    },
+    {
+      "library": "chem",
+      "perturbagen": "fluphenazine dihydrochloride",
+      "cell_line": "A549",
+      "dose": "10.0",
+      "net_score": 1.9721970148155976,
+      "fdr": 1.0,
+      "z_vs_null": 2.828237976175738,
+      "emp_p": 0.017994001999333556
+    },
+    {
+      "library": "chem",
+      "perturbagen": "leucine enkephalin",
+      "cell_line": "A375",
+      "dose": "10.0",
+      "net_score": 1.952182437022997,
+      "fdr": 1.0,
+      "z_vs_null": 2.7898509473620003,
+      "emp_p": 0.01866044651782739
+    },
+    {
+      "library": "chem",
+      "perturbagen": "tenidap",
+      "cell_line": "HA1E",
+      "dose": "10.0",
+      "net_score": 1.918639053674569,
+      "fdr": 1.0,
+      "z_vs_null": 2.725516299064678,
+      "emp_p": 0.020993002332555816
+    },
+    {
+      "library": "chem",
+      "perturbagen": "methoprene acid",
+      "cell_line": "HA1E",
+      "dose": "10.0",
+      "net_score": 1.9078677490696785,
+      "fdr": 1.0,
+      "z_vs_null": 2.704857438082742,
+      "emp_p": 0.02165944685104965
+    },
+    {
+      "library": "chem",
+      "perturbagen": "prednicarbate",
+      "cell_line": "HCC515",
+      "dose": "10.0",
+      "net_score": 1.9065080371063867,
+      "fdr": 1.0,
+      "z_vs_null": 3.0719243559470977,
+      "emp_p": 0.012329223592135955
+    },
+    {
+      "library": "chem",
+      "perturbagen": "fluticasone propionate",
+      "cell_line": "HCC515",
+      "dose": "10.0",
+      "net_score": 1.8986210012430735,
+      "fdr": 1.0,
+      "z_vs_null": 5.052621505852774,
+      "emp_p": 0.0006664445184938354
+    },
+    {
+      "library": "chem",
+      "perturbagen": "ginsenoside-rc",
+      "cell_line": "HA1E",
+      "dose": "10.0",
+      "net_score": 1.8977284307761162,
+      "fdr": 1.0,
+      "z_vs_null": 2.926336637010014,
+      "emp_p": 0.015661446184605132
+    },
+    {
+      "library": "chem",
+      "perturbagen": "clobetasol propionate",
+      "cell_line": "HA1E",
+      "dose": "10.0",
+      "net_score": 1.8974711078271325,
+      "fdr": 1.0,
+      "z_vs_null": 2.9825033678177855,
+      "emp_p": 0.013995334888370544
+    }
+  ],
+  "candidates": {
+    "n_ranked": 1165,
+    "n_annotated": 60,
+    "n_max_phase_4_in_top60": 8
+  }
+}

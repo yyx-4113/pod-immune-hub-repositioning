@@ -1,0 +1,195 @@
+{
+  "n_samples": 7,
+  "qc": [
+    {
+      "n_cells_raw": 6162,
+      "n_cells_kept": 3020,
+      "median_genes_per_cell": 453.5,
+      "median_mito_frac": 0.08040536914061547,
+      "sample": "LC1_post"
+    },
+    {
+      "n_cells_raw": 7864,
+      "n_cells_kept": 6611,
+      "median_genes_per_cell": 754.0,
+      "median_mito_frac": 0.07161464516610473,
+      "sample": "MY2_post"
+    },
+    {
+      "n_cells_raw": 7320,
+      "n_cells_kept": 4429,
+      "median_genes_per_cell": 1155.5,
+      "median_mito_frac": 0.05157581542408018,
+      "sample": "MY2_pre"
+    },
+    {
+      "n_cells_raw": 14125,
+      "n_cells_kept": 10468,
+      "median_genes_per_cell": 945.0,
+      "median_mito_frac": 0.06993686255463817,
+      "sample": "WSY1_post"
+    },
+    {
+      "n_cells_raw": 15713,
+      "n_cells_kept": 12331,
+      "median_genes_per_cell": 1173.0,
+      "median_mito_frac": 0.060496067755595885,
+      "sample": "WSY1_pre"
+    },
+    {
+      "n_cells_raw": 10860,
+      "n_cells_kept": 7482,
+      "median_genes_per_cell": 1410.0,
+      "median_mito_frac": 0.05676591365842102,
+      "sample": "WXY1_post"
+    },
+    {
+      "n_cells_raw": 11033,
+      "n_cells_kept": 7571,
+      "median_genes_per_cell": 1366.0,
+      "median_mito_frac": 0.07631524225410688,
+      "sample": "WXY1_pre"
+    }
+  ],
+  "note": "group comparison requires a sample table with POD status",
+  "proportion_test": [
+    {
+      "cell_type": "Mono_classical",
+      "n_POD_samples": 4,
+      "n_CTRL_samples": 3,
+      "mean_POD": 0.06593332094400976,
+      "mean_CTRL": 0.18204132336196296,
+      "log2_ratio": -1.4651723690629974,
+      "mannwhitney_p": 0.22857142857142856
+    },
+    {
+      "cell_type": "NK",
+      "n_POD_samples": 4,
+      "n_CTRL_samples": 3,
+      "mean_POD": 0.40423623993460683,
+      "mean_CTRL": 0.2301442512112611,
+      "log2_ratio": 0.8126575601403493,
+      "mannwhitney_p": 0.22857142857142856
+    },
+    {
+      "cell_type": "CD4_T",
+      "n_POD_samples": 4,
+      "n_CTRL_samples": 3,
+      "mean_POD": 0.21335355145542448,
+      "mean_CTRL": 0.3147015782234675,
+      "log2_ratio": -0.5607361104385372,
+      "mannwhitney_p": 0.8571428571428571
+    },
+    {
+      "cell_type": "B",
+      "n_POD_samples": 4,
+      "n_CTRL_samples": 3,
+      "mean_POD": 0.12430471050616734,
+      "mean_CTRL": 0.13739437954725936,
+      "log2_ratio": -0.14444091456970262,
+      "mannwhitney_p": 1.0
+    },
+    {
+      "cell_type": "CD8_T",
+      "n_POD_samples": 4,
+      "n_CTRL_samples": 3,
+      "mean_POD": 0.10783280135375177,
+      "mean_CTRL": 0.08944184303179109,
+      "log2_ratio": 0.26977152154462414,
+      "mannwhitney_p": 1.0
+    },
+    {
+      "cell_type": "Mono_nonclassical",
+      "n_POD_samples": 4,
+      "n_CTRL_samples": 3,
+      "mean_POD": 0.024564582867610138,
+      "mean_CTRL": 0.015650279549323243,
+      "log2_ratio": 0.6503578627483717,
+      "mannwhitney_p": 1.0
+    },
+    {
+      "cell_type": "Platelet",
+      "n_POD_samples": 4,
+      "n_CTRL_samples": 3,
+      "mean_POD": 0.05977479293842969,
+      "mean_CTRL": 0.03062634507493466,
+      "log2_ratio": 0.9647410500800334,
+      "mannwhitney_p": 1.0
+    }
+  ],
+  "annotation": [
+    {
+      "cluster": 0,
+      "n_cells": 2215,
+      "called_type": "Mono_classical",
+      "top_markers": "MALAT1;MT-RNR2;MT-RNR1;MT-CO1;MT-CO2;MT-CO3;B2M;MT-ATP6;ACTB;MT-CYB;TMSB4X;RPLP1;TMSB10;MT-ND3;HLA-B"
+    },
+    {
+      "cluster": 1,
+      "n_cells": 5089,
+      "called_type": "CD4_T",
+      "top_markers": "MALAT1;MT-RNR2;B2M;RPL41;RPLP1;RPL10;EEF1A1;RPS12;RPL13;RPS18;RPL28;RPL32;RPL30;TMSB4X;RPS8"
+    },
+    {
+      "cluster": 2,
+      "n_cells": 2387,
+      "called_type": "B",
+      "top_markers": "MT-RNR2;MALAT1;CD74;RPL41;RPLP1;B2M;EEF1A1;RPL13;RPL10;RPS18;RPS8;RPS12;RPL32;RPL28;RPL30"
+    },
+    {
+      "cluster": 3,
+      "n_cells": 4517,
+      "called_type": "B",
+      "top_markers": "MT-RNR2;CD74;MALAT1;RPL41;RPL13;RPLP1;RPL10;EEF1A1;RPL30;RPL32;RPS19;RPL18A;RPS12;RPS18;RPS27"
+    },
+    {
+      "cluster": 4,
+      "n_cells": 2591,
+      "called_type": "Platelet",
+      "top_markers": "MT-RNR2;NRGN;TMSB4X;ACTB;GPX1;B2M;FTH1;SH3BGRL3;OAZ1;TAGLN2;TUBB1;MT-RNR1;HLA-B;TGFB1;CAVIN2"
+    },
+    {
+      "cluster": 5,
+      "n_cells": 5570,
+      "called_type": "NK",
+      "top_markers": "MALAT1;B2M;MT-RNR2;ACTB;GNLY;TMSB4X;NKG7;HLA-B;RPL41;RPL10;RPLP1;MT-CO1;HLA-C;EEF1A1;HLA-A"
+    },
+    {
+      "cluster": 6,
+      "n_cells": 6062,
+      "called_type": "CD8_T",
+      "top_markers": "MALAT1;MT-RNR2;B2M;RPL41;EEF1A1;RPL10;RPS12;TMSB4X;ACTB;RPL13;RPLP1;HLA-B;RPL30;RPS18;RPL28"
+    },
+    {
+      "cluster": 7,
+      "n_cells": 1273,
+      "called_type": "Mono_nonclassical",
+      "top_markers": "FTL;MT-RNR2;FTH1;ACTB;TMSB4X;MALAT1;TMSB10;B2M;RPS19;MT-CO1;RPL41;RPLP1;MT-RNR1;MT-CO2;RPL28"
+    },
+    {
+      "cluster": 8,
+      "n_cells": 7975,
+      "called_type": "CD4_T",
+      "top_markers": "MALAT1;MT-RNR2;RPS12;RPL41;RPL10;RPL13;EEF1A1;RPLP1;RPL32;RPL30;RPL28;B2M;RPS18;RPS8;RPS27"
+    },
+    {
+      "cluster": 9,
+      "n_cells": 6805,
+      "called_type": "NK",
+      "top_markers": "MALAT1;B2M;MT-RNR2;TMSB4X;RPL41;HLA-B;ACTB;RPL10;EEF1A1;RPS12;NKG7;HLA-C;RPS27;TMSB10;RPLP1"
+    },
+    {
+      "cluster": 10,
+      "n_cells": 3572,
+      "called_type": "Mono_classical",
+      "top_markers": "MT-RNR2;FTL;RPLP1;ACTB;S100A9;TMSB4X;TMSB10;S100A8;RPL41;MT-RNR1;RPL13;RPL28;FTH1;S100A6;MT-CO1"
+    },
+    {
+      "cluster": 11,
+      "n_cells": 3856,
+      "called_type": "NK",
+      "top_markers": "MT-RNR2;MALAT1;MT-RNR1;B2M;RPL41;ACTB;RPLP1;RPL10;TMSB4X;RPL28;EEF1A1;RPS12;RPL30;RPL13;RPL32"
+    }
+  ],
+  "warning": "DESCRIPTIVE ONLY. Clustered POOLED across samples so that cluster IDs are comparable; proportions tested at SAMPLE level (no cell-level pseudoreplication), but with 4 POD vs 3 non-POD libraries derived from only 2+2 patients, Mann-Whitney has essentially no power. Report exact p; do NOT claim significance."
+}

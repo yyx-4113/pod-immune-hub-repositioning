@@ -1,0 +1,465 @@
+{
+  "tag": "immune",
+  "n_dis_up": 48,
+  "n_dis_down": 35,
+  "libraries": {
+    "chem": {
+      "n_signatures": 3769,
+      "n_perturbagens": 1069,
+      "universe_genes": 6474,
+      "disease_up_in_universe": 26,
+      "disease_down_in_universe": 18,
+      "null": {
+        "n_perm": 3000,
+        "null_mean_rev": 0.27712231603029014,
+        "null_sd_rev": 0.48979016920802837,
+        "null_p95": 1.325340256724896,
+        "null_max": 3.42282415209257
+      },
+      "n_druglevel_fdr05": 0,
+      "n_druglevel_consistent_2cell": 0
+    },
+    "ligand": {
+      "n_signatures": 96,
+      "n_perturbagens": 96,
+      "universe_genes": 4711,
+      "disease_up_in_universe": 34,
+      "disease_down_in_universe": 26,
+      "null": {
+        "n_perm": 3000,
+        "null_mean_rev": 0.559269396981918,
+        "null_sd_rev": 0.5208236558317207,
+        "null_p95": 1.619126586140295,
+        "null_max": 4.228051020176949
+      },
+      "n_druglevel_fdr05": 24,
+      "n_druglevel_consistent_2cell": 0
+    },
+    "crispr_ko": {
+      "n_signatures": 5212,
+      "n_genes": 5210,
+      "universe_genes": 9440,
+      "disease_up_in_universe": 40,
+      "disease_down_in_universe": 33,
+      "null": {
+        "n_perm": 3000,
+        "null_mean_rev": 0.5460254954822515,
+        "null_sd_rev": 0.5024917167242731,
+        "null_p95": 1.457856809095686,
+        "null_max": 3.9484767604189073
+      },
+      "n_genelevel_fdr05": 1109
+    }
+  },
+  "positive_control_qc": {
+    "chem": {
+      "dexamethasone": {
+        "rank": 250,
+        "n_drugs": 1069,
+        "percentile": 76.61,
+        "median_net": 0.142,
+        "n_cell_lines": 3,
+        "min_fdr": 1.0
+      },
+      "hydrocortisone": {
+        "rank": 75,
+        "n_drugs": 1069,
+        "percentile": 92.98,
+        "median_net": 0.853,
+        "n_cell_lines": 2,
+        "min_fdr": 1.0
+      },
+      "prednisolone": {
+        "rank": 141,
+        "n_drugs": 1069,
+        "percentile": 86.81,
+        "median_net": 0.613,
+        "n_cell_lines": 2,
+        "min_fdr": 1.0
+      },
+      "budesonide": {
+        "rank": 583,
+        "n_drugs": 1069,
+        "percentile": 45.46,
+        "median_net": 0.0,
+        "n_cell_lines": 6,
+        "min_fdr": 1.0
+      },
+      "fluticasone": {
+        "rank": 414,
+        "n_drugs": 1069,
+        "percentile": 61.27,
+        "median_net": 0.0,
+        "n_cell_lines": 4,
+        "min_fdr": 1.0
+      },
+      "betamethasone": {
+        "rank": 184,
+        "n_drugs": 1069,
+        "percentile": 82.79,
+        "median_net": 0.417,
+        "n_cell_lines": 2,
+        "min_fdr": 1.0
+      },
+      "triamcinolone": {
+        "rank": 346,
+        "n_drugs": 1069,
+        "percentile": 67.63,
+        "median_net": 0.0,
+        "n_cell_lines": 3,
+        "min_fdr": 1.0
+      },
+      "cyclosporine": {
+        "rank": 815,
+        "n_drugs": 1069,
+        "percentile": 23.76,
+        "median_net": -0.032,
+        "n_cell_lines": 7,
+        "min_fdr": 1.0
+      },
+      "sirolimus": {
+        "rank": 986,
+        "n_drugs": 1069,
+        "percentile": 7.76,
+        "median_net": -0.748,
+        "n_cell_lines": 8,
+        "min_fdr": 1.0
+      },
+      "tacrolimus": {
+        "rank": 442,
+        "n_drugs": 1069,
+        "percentile": 58.65,
+        "median_net": 0.0,
+        "n_cell_lines": 2,
+        "min_fdr": 1.0
+      },
+      "simvastatin": {
+        "rank": 500,
+        "n_drugs": 1069,
+        "percentile": 53.23,
+        "median_net": 0.0,
+        "n_cell_lines": 8,
+        "min_fdr": 1.0
+      },
+      "rosuvastatin": {
+        "rank": 876,
+        "n_drugs": 1069,
+        "percentile": 18.05,
+        "median_net": -0.33,
+        "n_cell_lines": 3,
+        "min_fdr": 1.0
+      },
+      "naproxen": {
+        "rank": 643,
+        "n_drugs": 1069,
+        "percentile": 39.85,
+        "median_net": 0.0,
+        "n_cell_lines": 1,
+        "min_fdr": 1.0
+      },
+      "indomethacin": {
+        "rank": 923,
+        "n_drugs": 1069,
+        "percentile": 13.66,
+        "median_net": -0.526,
+        "n_cell_lines": 2,
+        "min_fdr": 1.0
+      },
+      "ketorolac": {
+        "rank": 822,
+        "n_drugs": 1069,
+        "percentile": 23.11,
+        "median_net": -0.073,
+        "n_cell_lines": 2,
+        "min_fdr": 1.0
+      }
+    },
+    "ligand": {}
+  },
+  "positive_control_class_test": {
+    "ligand": {
+      "n_controls_found": 0
+    },
+    "crispr_ko": {
+      "n_controls_found": 18,
+      "controls": [
+        "nfkb1",
+        "rela",
+        "stat3",
+        "il1rap",
+        "nfkbiz",
+        "il6",
+        "il10ra",
+        "tnfrsf1a",
+        "ltf",
+        "cd63",
+        "adora3",
+        "col18a1"
+      ],
+      "mean_percentile_controls": 52.91,
+      "null_mean_percentile": 50.01,
+      "null_sd": 6.8,
+      "z": 0.427,
+      "perm_p_one_sided": 0.34203289835508227,
+      "mannwhitney_p": 0.3337014471569938,
+      "n_perm": 20000
+    }
+  },
+  "top25": [
+    {
+      "library": "ligand",
+      "perturbagen": "ifng-mcf7",
+      "cell_line": "",
+      "dose": "",
+      "net_score": 4.150767970289414,
+      "fdr": 0.00019247693106849232,
+      "z_vs_null": 10.8327883263856,
+      "emp_p": 0.0003332222592469177
+    },
+    {
+      "library": "chem",
+      "perturbagen": "cgs 12066b",
+      "cell_line": "HA1E",
+      "dose": "10.0",
+      "net_score": 4.119960290589332,
+      "fdr": 1.0,
+      "z_vs_null": 7.845886292027382,
+      "emp_p": 0.0003332222592469177
+    },
+    {
+      "library": "chem",
+      "perturbagen": "menadione",
+      "cell_line": "HCC515",
+      "dose": "10.0",
+      "net_score": 3.976775945356301,
+      "fdr": 1.0,
+      "z_vs_null": 7.553548155750465,
+      "emp_p": 0.0003332222592469177
+    },
+    {
+      "library": "ligand",
+      "perturbagen": "ifna-bt20",
+      "cell_line": "",
+      "dose": "",
+      "net_score": 3.863130446779448,
+      "fdr": 0.0007792471890424796,
+      "z_vs_null": 8.917964070397458,
+      "emp_p": 0.0003332222592469177
+    },
+    {
+      "library": "chem",
+      "perturbagen": "fit",
+      "cell_line": "HCC515",
+      "dose": "10.0",
+      "net_score": 3.733928354281144,
+      "fdr": 1.0,
+      "z_vs_null": 7.842080180766925,
+      "emp_p": 0.0003332222592469177
+    },
+    {
+      "library": "chem",
+      "perturbagen": "pravastatin sodium salt",
+      "cell_line": "HCC515",
+      "dose": "10.0",
+      "net_score": 3.6741637204720003,
+      "fdr": 1.0,
+      "z_vs_null": 6.9357076111482465,
+      "emp_p": 0.0003332222592469177
+    },
+    {
+      "library": "chem",
+      "perturbagen": "sb 218078",
+      "cell_line": "VCAP",
+      "dose": "10.0",
+      "net_score": 3.5851788895826315,
+      "fdr": 1.0,
+      "z_vs_null": 6.754028115552707,
+      "emp_p": 0.0003332222592469177
+    },
+    {
+      "library": "ligand",
+      "perturbagen": "ifng-bt20",
+      "cell_line": "",
+      "dose": "",
+      "net_score": 3.3591306617330554,
+      "fdr": 0.0006207289817705456,
+      "z_vs_null": 9.22902207282584,
+      "emp_p": 0.0003332222592469177
+    },
+    {
+      "library": "chem",
+      "perturbagen": "strophanthidin",
+      "cell_line": "HA1E",
+      "dose": "10.0",
+      "net_score": 3.233616990854174,
+      "fdr": 1.0,
+      "z_vs_null": 6.0362474804351836,
+      "emp_p": 0.0006664445184938354
+    },
+    {
+      "library": "chem",
+      "perturbagen": "rhodomyrtoxin b",
+      "cell_line": "MCF7",
+      "dose": "10.0",
+      "net_score": 3.207814322983867,
+      "fdr": 1.0,
+      "z_vs_null": 5.983566415169973,
+      "emp_p": 0.0006664445184938354
+    },
+    {
+      "library": "chem",
+      "perturbagen": "bntx maleate",
+      "cell_line": "A375",
+      "dose": "10.0",
+      "net_score": 3.0273863647686348,
+      "fdr": 1.0,
+      "z_vs_null": 6.134674567638348,
+      "emp_p": 0.0006664445184938354
+    },
+    {
+      "library": "chem",
+      "perturbagen": "bvt 948",
+      "cell_line": "A375",
+      "dose": "10.0",
+      "net_score": 2.999348054176063,
+      "fdr": 1.0,
+      "z_vs_null": 5.557942787107193,
+      "emp_p": 0.001999333555481506
+    },
+    {
+      "library": "chem",
+      "perturbagen": "mbcq",
+      "cell_line": "HA1E",
+      "dose": "10.0",
+      "net_score": 2.951696181040345,
+      "fdr": 1.0,
+      "z_vs_null": 5.460652404140198,
+      "emp_p": 0.001999333555481506
+    },
+    {
+      "library": "ligand",
+      "perturbagen": "ifng-mdamb231",
+      "cell_line": "",
+      "dose": "",
+      "net_score": 2.917985176558644,
+      "fdr": 0.00033580780048354157,
+      "z_vs_null": 9.996510625378026,
+      "emp_p": 0.0003332222592469177
+    },
+    {
+      "library": "chem",
+      "perturbagen": "alfaxalone",
+      "cell_line": "MCF7",
+      "dose": "10.0",
+      "net_score": 2.8706877710213803,
+      "fdr": 1.0,
+      "z_vs_null": 5.295258292310734,
+      "emp_p": 0.0023325558147284237
+    },
+    {
+      "library": "chem",
+      "perturbagen": "brd-a75409952 (wortmannin)",
+      "cell_line": "HA1E",
+      "dose": "10.0",
+      "net_score": 2.7961654136331804,
+      "fdr": 1.0,
+      "z_vs_null": 5.1431066933746035,
+      "emp_p": 0.002999000333222259
+    },
+    {
+      "library": "ligand",
+      "perturbagen": "il4-hs578t",
+      "cell_line": "",
+      "dose": "",
+      "net_score": 2.7669321572965124,
+      "fdr": 0.03741857264549773,
+      "z_vs_null": 4.577717621186274,
+      "emp_p": 0.0023325558147284237
+    },
+    {
+      "library": "chem",
+      "perturbagen": "gamma-linolenic acid (18:3 n-6)",
+      "cell_line": "HA1E",
+      "dose": "10.0",
+      "net_score": 2.746232475858189,
+      "fdr": 1.0,
+      "z_vs_null": 6.685683395161578,
+      "emp_p": 0.0003332222592469177
+    },
+    {
+      "library": "chem",
+      "perturbagen": "cilostazol",
+      "cell_line": "A375",
+      "dose": "10.0",
+      "net_score": 2.730751542946522,
+      "fdr": 1.0,
+      "z_vs_null": 5.009551806406517,
+      "emp_p": 0.003332222592469177
+    },
+    {
+      "library": "chem",
+      "perturbagen": "fluprostenol",
+      "cell_line": "VCAP",
+      "dose": "10.0",
+      "net_score": 2.6009843002574558,
+      "fdr": 1.0,
+      "z_vs_null": 4.7446072426989705,
+      "emp_p": 0.003332222592469177
+    },
+    {
+      "library": "chem",
+      "perturbagen": "cnqx disodium salt",
+      "cell_line": "MCF7",
+      "dose": "10.0",
+      "net_score": 2.5946149925817017,
+      "fdr": 1.0,
+      "z_vs_null": 4.731603086886588,
+      "emp_p": 0.003332222592469177
+    },
+    {
+      "library": "chem",
+      "perturbagen": "api-2",
+      "cell_line": "HA1E",
+      "dose": "10.0",
+      "net_score": 2.542733612265582,
+      "fdr": 1.0,
+      "z_vs_null": 4.625677358732408,
+      "emp_p": 0.003332222592469177
+    },
+    {
+      "library": "chem",
+      "perturbagen": "hemado",
+      "cell_line": "HCC515",
+      "dose": "10.0",
+      "net_score": 2.499032667518231,
+      "fdr": 1.0,
+      "z_vs_null": 4.536453549242696,
+      "emp_p": 0.003332222592469177
+    },
+    {
+      "library": "chem",
+      "perturbagen": "periplocymarin",
+      "cell_line": "A375",
+      "dose": "10.0",
+      "net_score": 2.4928702139656354,
+      "fdr": 1.0,
+      "z_vs_null": 5.213848562785648,
+      "emp_p": 0.002999000333222259
+    },
+    {
+      "library": "chem",
+      "perturbagen": "ro 90-7501",
+      "cell_line": "MCF7",
+      "dose": "10.0",
+      "net_score": 2.489851663695522,
+      "fdr": 1.0,
+      "z_vs_null": 4.517708779747721,
+      "emp_p": 0.003332222592469177
+    }
+  ],
+  "candidates": {
+    "n_ranked": 1165,
+    "n_annotated": 60,
+    "n_max_phase_4_in_top60": 17
+  }
+}

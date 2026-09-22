@@ -1,0 +1,74 @@
+$cohort
+[1] "GSE330869"
+
+$platform
+[1] "EPIC v2 (GPL33022)"
+
+$design
+[1] "65 POD cases, paired Pre/Post, NO GEO controls"
+
+$n_samples_total
+[1] 130
+
+$n_paired_patients
+[1] 65
+
+$n_probes_analyzed
+[1] 312514
+
+$n_DMP_fdr05_dB05
+[1] 6
+
+$n_DMP_fdr05_dB10
+[1] 0
+
+$n_DMP_total
+[1] 312514
+
+$direction
+$direction$hyper_in_pre
+[1] 4
+
+$direction$hypo_in_pre
+[1] 2
+
+
+$top_DMP_genes
+[1] "KLF5"   "TBC1D4" "LAX1"   "IDI1"   "NEMP1"  "DYRK1A"
+
+$immune_gene_overlap_n
+[1] 0
+
+$immune_gene_overlap_total
+[1] 49
+
+$fisher_p
+[1] 1
+
+$directional_mwu_p
+[1] 0.04127092
+
+$directional_mean_t_immune
+[1] 0.06440662
+
+$directional_mean_t_bg
+[1] -0.03478129
+
+$n_immune_probes
+[1] 737
+
+$n_DMR
+[1] NA
+
+$epidish_reference
+[1] "NONE"
+
+$mrs_burden_label
+[1] "Post (all; Day0/Day3 not encoded in GEO header)"
+
+$mrs_cv_r2
+[1] 0.7938691
+
+$seed
+[1] 12345
+

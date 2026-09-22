@@ -1,0 +1,33 @@
+$n_DMP_fdr05_dB05
+[1] 6
+
+$n_DMP_fdr05_dB10
+[1] 0
+
+$immune_gene_overlap_n
+[1] 0
+
+$immune_gene_overlap_total
+[1] 49
+
+$fisher_p
+[1] 1
+
+$directional_mwu_p
+[1] 0.04127092
+
+$directional_mean_t_immune
+[1] 0.06440662
+
+$directional_mean_t_bg
+[1] -0.03478129
+
+$n_immune_probes
+[1] 737
+
+$mrs_cv_r2
+[1] 0.7938691
+
+$mrs_burden_label
+[1] "Post (all; Day0/Day3 not encoded in GEO header)"
+

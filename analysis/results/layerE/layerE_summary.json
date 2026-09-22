@@ -1,0 +1,67 @@
+{
+  "dockability_audit": [
+    {
+      "gene": "ADORA3",
+      "uniprot": "P0DMS8",
+      "protein": "Adenosine receptor A3",
+      "n_pdb_entries": 5,
+      "pdb_ids": "8X16;8X17;9EBH;9EBI;9EHS",
+      "dockable_experimental": true,
+      "note": ""
+    },
+    {
+      "gene": "TMIGD3",
+      "uniprot": "P0DMS9",
+      "protein": "Transmembrane domain-containing protein TMIGD3",
+      "n_pdb_entries": 0,
+      "pdb_ids": "",
+      "dockable_experimental": false,
+      "note": "no experimental structure -> use AlphaFold model or skip docking (report as limitation)"
+    },
+    {
+      "gene": "COL13A1",
+      "uniprot": "Q5TAT6",
+      "protein": "Collagen alpha-1(XIII) chain",
+      "n_pdb_entries": 0,
+      "pdb_ids": "",
+      "dockable_experimental": false,
+      "note": "no experimental structure -> use AlphaFold model or skip docking (report as limitation)"
+    },
+    {
+      "gene": "SPATA13",
+      "uniprot": "Q96N96",
+      "protein": "Spermatogenesis-associated protein 13",
+      "n_pdb_entries": 0,
+      "pdb_ids": "",
+      "dockable_experimental": false,
+      "note": "no experimental structure -> use AlphaFold model or skip docking (report as limitation)"
+    },
+    {
+      "gene": "COL18A1",
+      "uniprot": "P39060",
+      "protein": "Collagen alpha-1(XVIII) chain",
+      "n_pdb_entries": 9,
+      "pdb_ids": "1BNL;3HON;3HSH;9BNB;9BNC;9BND;9BNE;9BNF;9BNG",
+      "dockable_experimental": true,
+      "note": ""
+    },
+    {
+      "gene": "CD63",
+      "uniprot": "P08962",
+      "protein": "CD63 antigen",
+      "n_pdb_entries": 2,
+      "pdb_ids": "9HQ5;9HUR",
+      "dockable_experimental": true,
+      "note": ""
+    },
+    {
+      "gene": "LTF",
+      "uniprot": "P02788",
+      "protein": "Lactotransferrin",
+      "n_pdb_entries": 25,
+      "pdb_ids": "1B0L;1BKA;1CB6;1DSN;1EH3;1FCK;1H43;1H44;1H45;1HSE",
+      "dockable_experimental": true,
+      "note": ""
+    }
+  ]
+}

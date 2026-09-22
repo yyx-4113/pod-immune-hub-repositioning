@@ -1,0 +1,5 @@
+﻿gene,cpg,evidence,source_note
+TMIGD3,cg01534316,FDR_significant_p=2.41E-08_FDR=0.021,"Seki 2026 Time x Group; hg38 manual: TMIGD3/ADORA3 locus. ADORA3 = adenosine A3 receptor (anti-inflammatory/neuroprotective hypothesis)"
+ADORA3,cg01534316,same_locus_as_TMIGD3,"co-localised at TMIGD3/ADORA3 locus (cg01534316 not in standard manifest; hg38)"
+SPATA13,cg05325643,suggestive_FDR=0.075,"upstream regulatory region"
+COL13A1,cg20382094,suggestive_FDR=0.075,"gene body"

@@ -1,0 +1,471 @@
+
+===== centBloodSub :: 66 probes x 7 types =====
+types: B, NK, CD4T, CD8T, Mono, Neutro, Eosino
+  CP_nnls_norm       mean sum(w)=1.0000 rmse=0.0681 (baseline 0.2285) r2=0.905 corr=0.969 min_w=0.0005
+  CP_penalty_K1000   mean sum(w)=1.0000 rmse=0.0654 (baseline 0.2285) r2=0.912 corr=0.967 min_w=0.0004
+  CP_penalty_K100    mean sum(w)=0.9997 rmse=0.0653 (baseline 0.2285) r2=0.912 corr=0.967 min_w=0.0004
+  CBS_svr_nu0.5      mean sum(w)=1.0000 rmse=0.0731 (baseline 0.2285) r2=0.889 corr=0.968 min_w=0.0011
+  CBS_svr_nu0.25     mean sum(w)=1.0000 rmse=0.0757 (baseline 0.2285) r2=0.880 corr=0.967 min_w=0.0011
+  RPC_irls           mean sum(w)=1.0000 rmse=0.0666 (baseline 0.2285) r2=0.909 corr=0.966 min_w=0.0006
+
+===== centDHSbloodDMC :: 113 probes x 7 types =====
+types: B, NK, CD4T, CD8T, Mono, Neutro, Eosino
+  CP_nnls_norm       mean sum(w)=1.0000 rmse=0.0674 (baseline 0.2811) r2=0.939 corr=0.979 min_w=0.0002
+  CP_penalty_K1000   mean sum(w)=1.0000 rmse=0.0660 (baseline 0.2811) r2=0.941 corr=0.978 min_w=0.0003
+  CP_penalty_K100    mean sum(w)=0.9995 rmse=0.0659 (baseline 0.2811) r2=0.941 corr=0.978 min_w=0.0003
+  CBS_svr_nu0.5      mean sum(w)=1.0000 rmse=0.0736 (baseline 0.2811) r2=0.927 corr=0.980 min_w=0.0003
+  CBS_svr_nu0.25     mean sum(w)=1.0000 rmse=0.0750 (baseline 0.2811) r2=0.924 corr=0.979 min_w=0.0005
+  RPC_irls           mean sum(w)=1.0000 rmse=0.0668 (baseline 0.2811) r2=0.940 corr=0.977 min_w=0.0005
+
+===== cent12CT450k :: 185 probes x 12 types =====
+types: CD4Tnv, Baso, CD4Tmem, Bmem, Bnv, Treg, CD8Tmem, CD8Tnv, Eos, NK, Neu, Mono
+  CP_nnls_norm       mean sum(w)=1.0000 rmse=0.0462 (baseline 0.1601) r2=0.911 corr=0.957 min_w=0.0001
+  CP_penalty_K1000   mean sum(w)=1.0000 rmse=0.0460 (baseline 0.1601) r2=0.911 corr=0.956 min_w=0.0001
+  CP_penalty_K100    mean sum(w)=0.9998 rmse=0.0460 (baseline 0.1601) r2=0.912 corr=0.956 min_w=0.0001
+  CBS_svr_nu0.5      mean sum(w)=1.0000 rmse=0.0491 (baseline 0.1601) r2=0.899 corr=0.956 min_w=0.0000
+  CBS_svr_nu0.25     mean sum(w)=1.0000 rmse=0.0486 (baseline 0.1601) r2=0.901 corr=0.956 min_w=0.0000
+  RPC_irls           mean sum(w)=1.0000 rmse=0.0466 (baseline 0.1601) r2=0.909 corr=0.956 min_w=0.0003
+
+===== cent12CT :: 121 probes x 12 types =====
+types: CD4Tnv, Baso, CD4Tmem, Bmem, Bnv, Treg, CD8Tmem, CD8Tnv, Eos, NK, Neu, Mono
+  CP_nnls_norm       mean sum(w)=1.0000 rmse=0.0475 (baseline 0.1541) r2=0.897 corr=0.955 min_w=0.0002
+  CP_penalty_K1000   mean sum(w)=1.0000 rmse=0.0468 (baseline 0.1541) r2=0.900 corr=0.954 min_w=0.0004
+  CP_penalty_K100    mean sum(w)=0.9998 rmse=0.0467 (baseline 0.1541) r2=0.900 corr=0.954 min_w=0.0004
+  CBS_svr_nu0.5      mean sum(w)=1.0000 rmse=0.0530 (baseline 0.1541) r2=0.869 corr=0.954 min_w=0.0002
+  CBS_svr_nu0.25     mean sum(w)=1.0000 rmse=0.0528 (baseline 0.1541) r2=0.871 corr=0.953 min_w=0.0000
+  RPC_irls           mean sum(w)=1.0000 rmse=0.0479 (baseline 0.1541) r2=0.894 corr=0.952 min_w=0.0007
+
+===== centCAB100i_a12 :: 641 probes x 12 types =====
+types: aCD4Tnv, aBaso, aCD4Tmem, aBmem, aBnv, aTreg, aCD8Tmem, aCD8Tnv, aEos, aNK, aNeu, aMono
+  CP_nnls_norm       mean sum(w)=1.0000 rmse=0.0524 (baseline 0.2807) r2=0.965 corr=0.983 min_w=0.0000
+  CP_penalty_K1000   mean sum(w)=1.0000 rmse=0.0523 (baseline 0.2807) r2=0.965 corr=0.983 min_w=0.0001
+  CP_penalty_K100    mean sum(w)=0.9997 rmse=0.0522 (baseline 0.2807) r2=0.965 corr=0.983 min_w=0.0001
+  CBS_svr_nu0.5      mean sum(w)=1.0000 rmse=0.0531 (baseline 0.2807) r2=0.964 corr=0.983 min_w=0.0000
+  CBS_svr_nu0.25     mean sum(w)=1.0000 rmse=0.0533 (baseline 0.2807) r2=0.963 corr=0.983 min_w=0.0000
+  RPC_irls           mean sum(w)=1.0000 rmse=0.0525 (baseline 0.2807) r2=0.964 corr=0.983 min_w=0.0002
+
+===== centCAB100i_7 :: 641 probes x 7 types =====
+types: B, CD4T, CD8T, Mono, nRBC, Gran, NK
+  CP_nnls_norm       mean sum(w)=1.0000 rmse=0.0861 (baseline 0.2807) r2=0.905 corr=0.959 min_w=0.0003
+  CP_penalty_K1000   mean sum(w)=1.0000 rmse=0.0859 (baseline 0.2807) r2=0.905 corr=0.958 min_w=0.0000
+  CP_penalty_K100    mean sum(w)=0.9977 rmse=0.0853 (baseline 0.2807) r2=0.907 corr=0.958 min_w=0.0000
+  CBS_svr_nu0.5      mean sum(w)=1.0000 rmse=0.0862 (baseline 0.2807) r2=0.905 corr=0.958 min_w=0.0002
+  CBS_svr_nu0.25     mean sum(w)=1.0000 rmse=0.0869 (baseline 0.2807) r2=0.903 corr=0.957 min_w=0.0000
+  RPC_irls           mean sum(w)=1.0000 rmse=0.0864 (baseline 0.2807) r2=0.904 corr=0.957 min_w=0.0000
+
+
+===== ABSOLUTE FRACTIONS (mean over 65 Pre / 65 Post) =====
+
+--- cent12CT / CBS_svr_nu0.25 ---
+  Neu        Pre= 79.08%  Post= 82.75%  delta= +2.38pp  p=0.01071
+  CD8Tmem    Pre=  3.61%  Post=  2.66%  delta= -0.34pp  p=0.00746
+  CD4Tnv     Pre=  3.40%  Post=  3.70%  delta= +0.22pp  p=0.3883
+  Mono       Pre=  3.17%  Post=  2.31%  delta= -0.21pp  p=0.04346
+  NK         Pre=  3.02%  Post=  2.28%  delta= -0.40pp  p=0.03605
+  CD4Tmem    Pre=  2.88%  Post=  1.76%  delta= -0.01pp  p=0.01402
+  Bnv        Pre=  1.94%  Post=  1.60%  delta= -0.20pp  p=0.1234
+  Treg       Pre=  1.17%  Post=  1.37%  delta= +0.00pp  p=0.1918
+  Baso       Pre=  0.77%  Post=  0.68%  delta= +0.00pp  p=0.5188
+  CD8Tnv     Pre=  0.40%  Post=  0.37%  delta= +0.00pp  p=0.857
+  Eos        Pre=  0.31%  Post=  0.34%  delta= +0.00pp  p=0.8658
+  Bmem       Pre=  0.26%  Post=  0.19%  delta= +0.00pp  p=0.4405
+
+--- cent12CT / CBS_svr_nu0.5 ---
+  Neu        Pre= 79.89%  Post= 83.45%  delta= +2.43pp  p=0.006365
+  CD8Tmem    Pre=  3.82%  Post=  2.89%  delta= -0.60pp  p=0.02088
+  Mono       Pre=  3.58%  Post=  2.44%  delta= -0.39pp  p=0.005942
+  NK         Pre=  2.98%  Post=  2.37%  delta= -0.28pp  p=0.02388
+  CD4Tnv     Pre=  2.50%  Post=  2.84%  delta= +0.54pp  p=0.2708
+  CD4Tmem    Pre=  2.41%  Post=  1.54%  delta= +0.00pp  p=0.01383
+  Bnv        Pre=  1.23%  Post=  1.22%  delta= +0.00pp  p=0.9828
+  Treg       Pre=  1.08%  Post=  1.00%  delta= -0.20pp  p=0.5469
+  CD8Tnv     Pre=  1.04%  Post=  1.03%  delta= +0.00pp  p=0.8276
+  Baso       Pre=  0.71%  Post=  0.50%  delta= +0.00pp  p=0.1095
+  Bmem       Pre=  0.46%  Post=  0.39%  delta= +0.00pp  p=0.5997
+  Eos        Pre=  0.29%  Post=  0.32%  delta= +0.00pp  p=0.3863
+
+--- cent12CT / CP_nnls_norm ---
+  Neu        Pre= 72.09%  Post= 77.26%  delta= +3.25pp  p=0.000609
+  NK         Pre=  6.81%  Post=  5.97%  delta= -0.87pp  p=0.004708
+  Mono       Pre=  4.11%  Post=  2.94%  delta= -0.21pp  p=0.01338
+  CD4Tmem    Pre=  3.87%  Post=  2.72%  delta= -0.99pp  p=0.001244
+  CD4Tnv     Pre=  2.99%  Post=  3.06%  delta= +0.00pp  p=0.9637
+  CD8Tmem    Pre=  2.68%  Post=  1.86%  delta= -0.19pp  p=0.01088
+  Bnv        Pre=  2.40%  Post=  2.11%  delta= -0.19pp  p=0.1251
+  Treg       Pre=  1.59%  Post=  1.38%  delta= -0.35pp  p=0.01891
+  Baso       Pre=  1.48%  Post=  1.09%  delta= -0.40pp  p=0.0005545
+  Bmem       Pre=  1.21%  Post=  1.00%  delta= -0.16pp  p=0.02387
+  Eos        Pre=  0.59%  Post=  0.50%  delta= +0.00pp  p=0.09263
+  CD8Tnv     Pre=  0.16%  Post=  0.12%  delta= +0.00pp  p=0.4593
+
+--- cent12CT / CP_penalty_K100 ---
+  Neu        Pre= 71.46%  Post= 76.39%  delta= +3.32pp  p=0.0007551
+  NK         Pre=  7.62%  Post=  6.79%  delta= -1.06pp  p=0.004163
+  CD4Tmem    Pre=  5.65%  Post=  4.45%  delta= -0.98pp  p=0.0007948
+  CD8Tmem    Pre=  3.17%  Post=  2.29%  delta= -0.36pp  p=0.007871
+  Treg       Pre=  2.22%  Post=  2.05%  delta= -0.35pp  p=0.05851
+  Mono       Pre=  2.20%  Post=  1.42%  delta= +0.00pp  p=0.02025
+  Bnv        Pre=  1.87%  Post=  1.58%  delta= -0.22pp  p=0.1308
+  Bmem       Pre=  1.69%  Post=  1.42%  delta= -0.26pp  p=0.006625
+  Baso       Pre=  1.40%  Post=  1.00%  delta= -0.53pp  p=0.0004995
+  CD4Tnv     Pre=  1.22%  Post=  1.29%  delta= +0.00pp  p=0.8241
+  Eos        Pre=  1.11%  Post=  0.95%  delta= +0.00pp  p=0.05714
+  CD8Tnv     Pre=  0.36%  Post=  0.35%  delta= +0.00pp  p=0.9001
+
+--- cent12CT / CP_penalty_K1000 ---
+  Neu        Pre= 71.47%  Post= 76.39%  delta= +3.32pp  p=0.0007551
+  NK         Pre=  7.63%  Post=  6.80%  delta= -1.07pp  p=0.004163
+  CD4Tmem    Pre=  5.67%  Post=  4.47%  delta= -0.95pp  p=0.0007754
+  CD8Tmem    Pre=  3.18%  Post=  2.29%  delta= -0.36pp  p=0.007871
+  Treg       Pre=  2.23%  Post=  2.06%  delta= -0.35pp  p=0.05851
+  Mono       Pre=  2.19%  Post=  1.41%  delta= +0.00pp  p=0.02074
+  Bnv        Pre=  1.86%  Post=  1.57%  delta= -0.22pp  p=0.1326
+  Bmem       Pre=  1.70%  Post=  1.43%  delta= -0.27pp  p=0.006898
+  Baso       Pre=  1.39%  Post=  1.00%  delta= -0.54pp  p=0.0005263
+  CD4Tnv     Pre=  1.21%  Post=  1.28%  delta= +0.00pp  p=0.8228
+  Eos        Pre=  1.11%  Post=  0.96%  delta= +0.00pp  p=0.05714
+  CD8Tnv     Pre=  0.37%  Post=  0.35%  delta= +0.00pp  p=0.9001
+
+--- cent12CT / RPC_irls ---
+  Neu        Pre= 72.22%  Post= 76.92%  delta= +3.74pp  p=0.0007551
+  CD4Tmem    Pre=  5.09%  Post=  4.12%  delta= -0.88pp  p=0.007325
+  NK         Pre=  4.81%  Post=  4.21%  delta= -0.69pp  p=0.007449
+  CD8Tmem    Pre=  3.65%  Post=  2.72%  delta= -0.53pp  p=0.003197
+  Treg       Pre=  2.75%  Post=  2.56%  delta= -0.25pp  p=0.08992
+  Bmem       Pre=  2.57%  Post=  2.25%  delta= -0.24pp  p=0.006888
+  Baso       Pre=  2.34%  Post=  1.86%  delta= -0.33pp  p=0.000243
+  CD8Tnv     Pre=  2.12%  Post=  1.98%  delta= -0.14pp  p=0.2431
+  Mono       Pre=  1.69%  Post=  0.88%  delta= +0.00pp  p=0.007596
+  Bnv        Pre=  1.46%  Post=  1.35%  delta= +0.00pp  p=0.7685
+  Eos        Pre=  0.75%  Post=  0.53%  delta= +0.00pp  p=0.01044
+  CD4Tnv     Pre=  0.56%  Post=  0.62%  delta= +0.00pp  p=0.8372
+
+--- cent12CT450k / CBS_svr_nu0.25 ---
+  Neu        Pre= 74.95%  Post= 79.17%  delta= +2.39pp  p=0.00338
+  CD8Tmem    Pre=  6.70%  Post=  5.20%  delta= -1.60pp  p=0.001652
+  NK         Pre=  5.21%  Post=  4.95%  delta= -0.32pp  p=0.3222
+  Mono       Pre=  4.37%  Post=  3.30%  delta= -0.20pp  p=0.01165
+  CD4Tmem    Pre=  3.02%  Post=  2.08%  delta= -0.11pp  p=0.03956
+  Bnv        Pre=  2.06%  Post=  1.68%  delta= -0.15pp  p=0.1081
+  CD4Tnv     Pre=  1.41%  Post=  1.69%  delta= +0.00pp  p=0.3943
+  CD8Tnv     Pre=  0.58%  Post=  0.33%  delta= +0.00pp  p=0.2463
+  Eos        Pre=  0.57%  Post=  0.55%  delta= +0.00pp  p=0.2604
+  Treg       Pre=  0.47%  Post=  0.44%  delta= +0.00pp  p=0.5847
+  Baso       Pre=  0.42%  Post=  0.23%  delta= +0.00pp  p=0.07754
+  Bmem       Pre=  0.23%  Post=  0.39%  delta= +0.00pp  p=0.05254
+
+--- cent12CT450k / CBS_svr_nu0.5 ---
+  Neu        Pre= 76.21%  Post= 80.49%  delta= +2.08pp  p=0.002977
+  CD8Tmem    Pre=  6.89%  Post=  5.69%  delta= -0.87pp  p=0.006493
+  Mono       Pre=  4.99%  Post=  3.51%  delta= -0.65pp  p=0.001203
+  NK         Pre=  4.72%  Post=  4.13%  delta= -0.50pp  p=0.08159
+  CD4Tmem    Pre=  2.90%  Post=  2.07%  delta= +0.00pp  p=0.04887
+  Bnv        Pre=  1.84%  Post=  1.54%  delta= +0.00pp  p=0.1975
+  CD4Tnv     Pre=  0.64%  Post=  0.90%  delta= +0.00pp  p=0.2064
+  CD8Tnv     Pre=  0.53%  Post=  0.40%  delta= +0.00pp  p=0.3857
+  Baso       Pre=  0.49%  Post=  0.45%  delta= +0.00pp  p=0.7368
+  Eos        Pre=  0.45%  Post=  0.45%  delta= +0.00pp  p=0.1239
+  Treg       Pre=  0.30%  Post=  0.27%  delta= +0.00pp  p=0.5001
+  Bmem       Pre=  0.02%  Post=  0.08%  delta= +0.00pp  p=0.0464
+
+--- cent12CT450k / CP_nnls_norm ---
+  Neu        Pre= 71.95%  Post= 76.82%  delta= +3.41pp  p=0.001652
+  NK         Pre=  7.67%  Post=  7.08%  delta= -0.50pp  p=0.02088
+  CD8Tmem    Pre=  6.26%  Post=  5.02%  delta= -0.39pp  p=0.005746
+  Mono       Pre=  4.90%  Post=  3.49%  delta= -0.80pp  p=0.0006712
+  CD4Tmem    Pre=  2.47%  Post=  1.70%  delta= -0.14pp  p=0.0237
+  Bnv        Pre=  1.63%  Post=  1.29%  delta= +0.00pp  p=0.09694
+  Baso       Pre=  1.57%  Post=  1.16%  delta= -0.27pp  p=0.007053
+  CD4Tnv     Pre=  0.92%  Post=  1.07%  delta= +0.00pp  p=0.4283
+  Eos        Pre=  0.86%  Post=  0.79%  delta= +0.00pp  p=0.1968
+  Bmem       Pre=  0.84%  Post=  0.87%  delta= +0.00pp  p=0.8888
+  Treg       Pre=  0.61%  Post=  0.48%  delta= +0.00pp  p=0.06405
+  CD8Tnv     Pre=  0.30%  Post=  0.24%  delta= +0.00pp  p=0.4908
+
+--- cent12CT450k / CP_penalty_K100 ---
+  Neu        Pre= 71.63%  Post= 76.41%  delta= +3.15pp  p=0.001615
+  NK         Pre=  8.09%  Post=  7.49%  delta= -0.54pp  p=0.02052
+  CD8Tmem    Pre=  6.70%  Post=  5.38%  delta= -0.50pp  p=0.002735
+  Mono       Pre=  5.02%  Post=  3.60%  delta= -0.84pp  p=0.0005883
+  CD4Tmem    Pre=  2.11%  Post=  1.49%  delta= +0.00pp  p=0.05411
+  Bmem       Pre=  1.35%  Post=  1.33%  delta= -0.02pp  p=0.6613
+  Bnv        Pre=  1.22%  Post=  0.96%  delta= +0.00pp  p=0.1942
+  Eos        Pre=  1.06%  Post=  0.97%  delta= +0.00pp  p=0.2078
+  Baso       Pre=  0.93%  Post=  0.63%  delta= -0.15pp  p=0.01302
+  Treg       Pre=  0.88%  Post=  0.70%  delta= -0.04pp  p=0.05819
+  CD8Tnv     Pre=  0.50%  Post=  0.50%  delta= +0.00pp  p=0.9956
+  CD4Tnv     Pre=  0.49%  Post=  0.51%  delta= +0.00pp  p=0.9617
+
+--- cent12CT450k / CP_penalty_K1000 ---
+  Neu        Pre= 71.63%  Post= 76.42%  delta= +3.15pp  p=0.001615
+  NK         Pre=  8.10%  Post=  7.49%  delta= -0.54pp  p=0.02052
+  CD8Tmem    Pre=  6.71%  Post=  5.39%  delta= -0.50pp  p=0.002796
+  Mono       Pre=  5.02%  Post=  3.60%  delta= -0.84pp  p=0.0005883
+  CD4Tmem    Pre=  2.10%  Post=  1.49%  delta= +0.00pp  p=0.05659
+  Bmem       Pre=  1.36%  Post=  1.34%  delta= -0.03pp  p=0.6367
+  Bnv        Pre=  1.22%  Post=  0.96%  delta= +0.00pp  p=0.2009
+  Eos        Pre=  1.06%  Post=  0.98%  delta= +0.00pp  p=0.2097
+  Baso       Pre=  0.92%  Post=  0.63%  delta= -0.14pp  p=0.01325
+  Treg       Pre=  0.89%  Post=  0.70%  delta= -0.04pp  p=0.057
+  CD8Tnv     Pre=  0.50%  Post=  0.50%  delta= +0.00pp  p=0.9956
+  CD4Tnv     Pre=  0.49%  Post=  0.51%  delta= +0.00pp  p=0.909
+
+--- cent12CT450k / RPC_irls ---
+  Neu        Pre= 71.90%  Post= 76.57%  delta= +3.02pp  p=0.00193
+  CD8Tmem    Pre=  6.74%  Post=  5.65%  delta= -0.33pp  p=0.0136
+  NK         Pre=  6.21%  Post=  5.71%  delta= -0.40pp  p=0.0511
+  Mono       Pre=  5.15%  Post=  3.67%  delta= -0.88pp  p=0.0006712
+  CD4Tmem    Pre=  2.12%  Post=  1.37%  delta= +0.00pp  p=0.03234
+  Baso       Pre=  1.53%  Post=  1.17%  delta= -0.36pp  p=0.01778
+  CD8Tnv     Pre=  1.43%  Post=  1.28%  delta= -0.06pp  p=0.2158
+  Bmem       Pre=  1.35%  Post=  1.34%  delta= -0.04pp  p=0.6735
+  Bnv        Pre=  1.35%  Post=  1.14%  delta= +0.00pp  p=0.4881
+  Treg       Pre=  1.22%  Post=  0.97%  delta= -0.47pp  p=0.01262
+  Eos        Pre=  0.88%  Post=  0.82%  delta= +0.00pp  p=0.2547
+  CD4Tnv     Pre=  0.11%  Post=  0.30%  delta= +0.00pp  p=0.08539
+
+--- centBloodSub / CBS_svr_nu0.25 ---
+  Neutro     Pre= 77.60%  Post= 82.20%  delta= +4.30pp  p=0.005211
+  Mono       Pre=  9.73%  Post=  7.54%  delta= -1.64pp  p=0.0003047
+  NK         Pre=  4.35%  Post=  4.02%  delta= +0.00pp  p=0.5267
+  CD4T       Pre=  3.25%  Post=  2.90%  delta= +0.00pp  p=0.3454
+  CD8T       Pre=  3.18%  Post=  1.94%  delta= +0.00pp  p=0.01737
+  Eosino     Pre=  1.31%  Post=  0.89%  delta= +0.00pp  p=0.2871
+  B          Pre=  0.58%  Post=  0.50%  delta= +0.00pp  p=0.4073
+
+--- centBloodSub / CBS_svr_nu0.5 ---
+  Neutro     Pre= 76.87%  Post= 81.75%  delta= +2.47pp  p=0.002454
+  Mono       Pre=  9.70%  Post=  7.53%  delta= -1.48pp  p=0.0001023
+  NK         Pre=  4.97%  Post=  4.35%  delta= -0.34pp  p=0.2127
+  CD4T       Pre=  3.85%  Post=  3.17%  delta= +0.00pp  p=0.2628
+  CD8T       Pre=  2.95%  Post=  1.92%  delta= +0.00pp  p=0.08641
+  B          Pre=  0.92%  Post=  0.72%  delta= +0.00pp  p=0.2526
+  Eosino     Pre=  0.74%  Post=  0.55%  delta= +0.00pp  p=0.4603
+
+--- centBloodSub / CP_nnls_norm ---
+  Neutro     Pre= 74.44%  Post= 79.79%  delta= +3.58pp  p=0.0005803
+  Mono       Pre=  9.75%  Post=  7.76%  delta= -1.41pp  p=0.000117
+  NK         Pre=  7.52%  Post=  6.46%  delta= -0.82pp  p=0.002542
+  CD4T       Pre=  3.86%  Post=  2.82%  delta= +0.00pp  p=0.04948
+  CD8T       Pre=  2.58%  Post=  1.71%  delta= -0.00pp  p=0.03095
+  B          Pre=  1.63%  Post=  1.27%  delta= -0.06pp  p=0.08231
+  Eosino     Pre=  0.23%  Post=  0.19%  delta= +0.00pp  p=0.9165
+
+--- centBloodSub / CP_penalty_K100 ---
+  Neutro     Pre= 72.65%  Post= 77.72%  delta= +3.51pp  p=0.0003213
+  Mono       Pre=  8.33%  Post=  6.33%  delta= -1.48pp  p=6.804e-05
+  NK         Pre=  8.24%  Post=  7.72%  delta= -0.85pp  p=0.05347
+  CD8T       Pre=  7.09%  Post=  5.26%  delta= -1.61pp  p=0.00184
+  B          Pre=  2.56%  Post=  2.17%  delta= -0.05pp  p=0.08104
+  CD4T       Pre=  1.02%  Post=  0.73%  delta= +0.00pp  p=0.2604
+  Eosino     Pre=  0.09%  Post=  0.05%  delta= +0.00pp  p=1
+
+--- centBloodSub / CP_penalty_K1000 ---
+  Neutro     Pre= 72.66%  Post= 77.73%  delta= +3.51pp  p=0.0003213
+  Mono       Pre=  8.32%  Post=  6.32%  delta= -1.48pp  p=6.804e-05
+  NK         Pre=  8.25%  Post=  7.73%  delta= -0.83pp  p=0.05429
+  CD8T       Pre=  7.11%  Post=  5.27%  delta= -1.61pp  p=0.001927
+  B          Pre=  2.56%  Post=  2.17%  delta= -0.05pp  p=0.07976
+  CD4T       Pre=  1.01%  Post=  0.73%  delta= +0.00pp  p=0.2604
+  Eosino     Pre=  0.09%  Post=  0.05%  delta= +0.00pp  p=1
+
+--- centBloodSub / RPC_irls ---
+  Neutro     Pre= 71.86%  Post= 77.12%  delta= +4.12pp  p=0.0002031
+  CD8T       Pre=  9.15%  Post=  7.05%  delta= -1.90pp  p=0.0005267
+  Mono       Pre=  8.48%  Post=  6.00%  delta= -2.33pp  p=9.802e-05
+  NK         Pre=  5.73%  Post=  5.49%  delta= -0.37pp  p=0.2912
+  B          Pre=  3.71%  Post=  3.43%  delta= -0.21pp  p=0.1371
+  CD4T       Pre=  0.89%  Post=  0.81%  delta= +0.00pp  p=0.925
+  Eosino     Pre=  0.17%  Post=  0.10%  delta= +0.00pp  p=0.8658
+
+--- centCAB100i_7 / CBS_svr_nu0.25 ---
+  Gran       Pre= 71.09%  Post= 75.71%  delta= +2.68pp  p=0.0002979
+  Mono       Pre= 13.31%  Post= 11.61%  delta= -1.59pp  p=0.0004439
+  CD4T       Pre=  9.23%  Post=  7.99%  delta= -0.75pp  p=0.03234
+  NK         Pre=  5.31%  Post=  4.18%  delta= -0.43pp  p=0.02219
+  nRBC       Pre=  0.78%  Post=  0.35%  delta= +0.00pp  p=0.0009694
+  CD8T       Pre=  0.25%  Post=  0.14%  delta= +0.00pp  p=0.1823
+  B          Pre=  0.03%  Post=  0.02%  delta= +0.00pp  p=0.1797
+
+--- centCAB100i_7 / CBS_svr_nu0.5 ---
+  Gran       Pre= 72.12%  Post= 76.78%  delta= +3.24pp  p=0.0001979
+  Mono       Pre= 13.34%  Post= 11.57%  delta= -1.18pp  p=0.0009777
+  CD4T       Pre=  6.84%  Post=  5.21%  delta= -1.07pp  p=0.0005529
+  NK         Pre=  6.31%  Post=  5.19%  delta= -0.72pp  p=0.005211
+  CD8T       Pre=  0.67%  Post=  0.78%  delta= +0.00pp  p=0.509
+  nRBC       Pre=  0.61%  Post=  0.38%  delta= +0.00pp  p=0.1257
+  B          Pre=  0.10%  Post=  0.09%  delta= +0.00pp  p=0.4631
+
+--- centCAB100i_7 / CP_nnls_norm ---
+  Gran       Pre= 73.89%  Post= 78.92%  delta= +3.57pp  p=0.0003923
+  Mono       Pre= 13.79%  Post= 11.84%  delta= -0.96pp  p=0.0001879
+  CD4T       Pre=  5.89%  Post=  4.30%  delta= -0.66pp  p=0.006845
+  NK         Pre=  5.50%  Post=  4.26%  delta= -0.63pp  p=0.01111
+  nRBC       Pre=  0.61%  Post=  0.40%  delta= +0.00pp  p=0.1222
+  CD8T       Pre=  0.29%  Post=  0.24%  delta= +0.00pp  p=0.6192
+  B          Pre=  0.04%  Post=  0.03%  delta= +0.00pp  p=0.285
+
+--- centCAB100i_7 / CP_penalty_K100 ---
+  Gran       Pre= 72.76%  Post= 77.60%  delta= +3.45pp  p=0.0004225
+  Mono       Pre= 12.62%  Post= 10.79%  delta= -1.04pp  p=0.0001979
+  NK         Pre=  6.66%  Post=  5.50%  delta= -0.64pp  p=0.006707
+  CD4T       Pre=  5.66%  Post=  4.15%  delta= -0.66pp  p=0.006006
+  nRBC       Pre=  1.42%  Post=  1.15%  delta= +0.00pp  p=0.1398
+  CD8T       Pre=  0.66%  Post=  0.58%  delta= +0.00pp  p=0.5668
+  B          Pre=  0.00%  Post=  0.00%  delta= +0.00pp  p=nan
+
+--- centCAB100i_7 / CP_penalty_K1000 ---
+  Gran       Pre= 72.87%  Post= 77.71%  delta= +3.46pp  p=0.0004662
+  Mono       Pre= 12.58%  Post= 10.75%  delta= -1.04pp  p=0.0002084
+  NK         Pre=  6.74%  Post=  5.58%  delta= -0.64pp  p=0.00657
+  CD4T       Pre=  5.65%  Post=  4.14%  delta= -0.66pp  p=0.006006
+  nRBC       Pre=  1.48%  Post=  1.21%  delta= +0.00pp  p=0.133
+  CD8T       Pre=  0.69%  Post=  0.61%  delta= +0.00pp  p=0.5392
+  B          Pre=  0.00%  Post=  0.00%  delta= +0.00pp  p=nan
+
+--- centCAB100i_7 / RPC_irls ---
+  Gran       Pre= 72.56%  Post= 77.26%  delta= +3.05pp  p=0.0004225
+  Mono       Pre=  9.90%  Post=  7.99%  delta= -1.22pp  p=0.00151
+  NK         Pre=  7.33%  Post=  6.32%  delta= -0.82pp  p=0.005648
+  CD4T       Pre=  6.34%  Post=  5.02%  delta= -0.96pp  p=0.004428
+  nRBC       Pre=  2.01%  Post=  1.71%  delta= -0.12pp  p=0.06438
+  CD8T       Pre=  1.86%  Post=  1.70%  delta= -0.27pp  p=0.3064
+  B          Pre=  0.00%  Post=  0.00%  delta= +0.00pp  p=nan
+
+--- centCAB100i_a12 / CBS_svr_nu0.25 ---
+  aNeu       Pre= 70.26%  Post= 74.34%  delta= +2.36pp  p=0.001048
+  aCD8Tmem   Pre=  7.81%  Post=  6.49%  delta= -1.32pp  p=0.0009777
+  aMono      Pre=  7.31%  Post=  5.53%  delta= -1.43pp  p=0.0001109
+  aCD4Tnv    Pre=  4.11%  Post=  3.70%  delta= -0.39pp  p=0.07735
+  aNK        Pre=  2.61%  Post=  2.30%  delta= +0.00pp  p=0.2256
+  aBaso      Pre=  2.22%  Post=  2.30%  delta= +0.19pp  p=0.5853
+  aCD4Tmem   Pre=  1.56%  Post=  1.43%  delta= +0.00pp  p=0.5821
+  aBnv       Pre=  1.20%  Post=  0.96%  delta= -0.04pp  p=0.05551
+  aBmem      Pre=  1.18%  Post=  1.16%  delta= -0.08pp  p=0.641
+  aTreg      Pre=  1.15%  Post=  1.15%  delta= +0.00pp  p=0.9253
+  aEos       Pre=  0.51%  Post=  0.52%  delta= +0.00pp  p=0.5566
+  aCD8Tnv    Pre=  0.08%  Post=  0.12%  delta= +0.00pp  p=0.859
+
+--- centCAB100i_a12 / CBS_svr_nu0.5 ---
+  aNeu       Pre= 71.21%  Post= 75.66%  delta= +2.96pp  p=0.0007732
+  aMono      Pre=  7.20%  Post=  5.60%  delta= -1.03pp  p=0.001146
+  aCD8Tmem   Pre=  7.20%  Post=  5.98%  delta= -0.84pp  p=0.001048
+  aCD4Tnv    Pre=  3.42%  Post=  2.92%  delta= -0.35pp  p=0.02127
+  aBnv       Pre=  2.46%  Post=  2.24%  delta= +0.00pp  p=0.4181
+  aNK        Pre=  2.34%  Post=  2.04%  delta= -0.19pp  p=0.09455
+  aBaso      Pre=  1.96%  Post=  1.94%  delta= +0.04pp  p=0.9609
+  aCD4Tmem   Pre=  1.87%  Post=  1.23%  delta= +0.00pp  p=0.07646
+  aTreg      Pre=  1.09%  Post=  1.09%  delta= -0.00pp  p=0.8802
+  aBmem      Pre=  0.68%  Post=  0.69%  delta= +0.00pp  p=1
+  aEos       Pre=  0.50%  Post=  0.50%  delta= +0.00pp  p=0.2805
+  aCD8Tnv    Pre=  0.09%  Post=  0.10%  delta= +0.00pp  p=0.8313
+
+--- centCAB100i_a12 / CP_nnls_norm ---
+  aNeu       Pre= 69.97%  Post= 74.61%  delta= +3.38pp  p=0.0007551
+  aMono      Pre=  8.17%  Post=  6.45%  delta= -1.11pp  p=0.0001202
+  aCD8Tmem   Pre=  5.07%  Post=  3.88%  delta= -0.63pp  p=0.0003646
+  aNK        Pre=  4.54%  Post=  4.17%  delta= -0.06pp  p=0.1072
+  aCD4Tnv    Pre=  3.24%  Post=  2.74%  delta= -0.22pp  p=0.0243
+  aCD4Tmem   Pre=  3.15%  Post=  2.51%  delta= -0.38pp  p=0.02222
+  aBnv       Pre=  2.83%  Post=  2.45%  delta= -0.15pp  p=0.04457
+  aBaso      Pre=  1.15%  Post=  1.18%  delta= +0.06pp  p=0.7116
+  aBmem      Pre=  0.83%  Post=  0.89%  delta= +0.05pp  p=0.3318
+  aTreg      Pre=  0.51%  Post=  0.52%  delta= +0.00pp  p=0.5967
+  aEos       Pre=  0.48%  Post=  0.46%  delta= +0.00pp  p=0.256
+  aCD8Tnv    Pre=  0.04%  Post=  0.14%  delta= +0.00pp  p=0.1159
+
+--- centCAB100i_a12 / CP_penalty_K100 ---
+  aNeu       Pre= 69.94%  Post= 74.54%  delta= +3.38pp  p=0.0008299
+  aMono      Pre=  8.05%  Post=  6.34%  delta= -0.92pp  p=0.0001447
+  aCD8Tmem   Pre=  5.60%  Post=  4.37%  delta= -0.70pp  p=0.0003213
+  aNK        Pre=  4.58%  Post=  4.21%  delta= -0.18pp  p=0.08869
+  aCD4Tnv    Pre=  3.00%  Post=  2.47%  delta= -0.28pp  p=0.01097
+  aCD4Tmem   Pre=  2.83%  Post=  2.23%  delta= -0.40pp  p=0.03001
+  aBnv       Pre=  1.63%  Post=  1.43%  delta= +0.00pp  p=0.3937
+  aBmem      Pre=  1.36%  Post=  1.33%  delta= +0.00pp  p=0.6833
+  aBaso      Pre=  1.24%  Post=  1.24%  delta= +0.01pp  p=0.862
+  aTreg      Pre=  0.96%  Post=  0.99%  delta= +0.00pp  p=0.6083
+  aEos       Pre=  0.58%  Post=  0.55%  delta= +0.00pp  p=0.2735
+  aCD8Tnv    Pre=  0.20%  Post=  0.27%  delta= +0.00pp  p=0.4091
+
+--- centCAB100i_a12 / CP_penalty_K1000 ---
+  aNeu       Pre= 69.96%  Post= 74.56%  delta= +3.39pp  p=0.0008299
+  aMono      Pre=  8.05%  Post=  6.33%  delta= -0.92pp  p=0.0001485
+  aCD8Tmem   Pre=  5.63%  Post=  4.40%  delta= -0.73pp  p=0.0003295
+  aNK        Pre=  4.58%  Post=  4.21%  delta= -0.18pp  p=0.08869
+  aCD4Tnv    Pre=  2.99%  Post=  2.46%  delta= -0.32pp  p=0.01073
+  aCD4Tmem   Pre=  2.82%  Post=  2.21%  delta= -0.42pp  p=0.03164
+  aBnv       Pre=  1.60%  Post=  1.40%  delta= +0.00pp  p=0.4041
+  aBmem      Pre=  1.38%  Post=  1.34%  delta= +0.00pp  p=0.6784
+  aBaso      Pre=  1.24%  Post=  1.24%  delta= +0.00pp  p=0.8749
+  aTreg      Pre=  0.98%  Post=  1.01%  delta= +0.00pp  p=0.6421
+  aEos       Pre=  0.59%  Post=  0.56%  delta= +0.00pp  p=0.2735
+  aCD8Tnv    Pre=  0.21%  Post=  0.28%  delta= +0.00pp  p=0.4802
+
+--- centCAB100i_a12 / RPC_irls ---
+  aNeu       Pre= 70.33%  Post= 74.89%  delta= +3.33pp  p=0.000639
+  aCD8Tmem   Pre=  6.86%  Post=  5.64%  delta= -0.74pp  p=0.0004896
+  aMono      Pre=  6.81%  Post=  5.13%  delta= -1.01pp  p=0.0002633
+  aCD4Tnv    Pre=  3.34%  Post=  2.83%  delta= -0.46pp  p=0.02143
+  aNK        Pre=  3.05%  Post=  2.72%  delta= -0.34pp  p=0.06208
+  aBnv       Pre=  2.37%  Post=  2.14%  delta= +0.00pp  p=0.2964
+  aBaso      Pre=  2.10%  Post=  2.05%  delta= +0.01pp  p=0.645
+  aBmem      Pre=  1.67%  Post=  1.63%  delta= -0.09pp  p=0.3974
+  aTreg      Pre=  1.38%  Post=  1.28%  delta= -0.15pp  p=0.3689
+  aCD4Tmem   Pre=  1.21%  Post=  0.74%  delta= -0.05pp  p=0.03642
+  aEos       Pre=  0.67%  Post=  0.66%  delta= +0.00pp  p=0.3758
+  aCD8Tnv    Pre=  0.21%  Post=  0.28%  delta= +0.00pp  p=0.3391
+
+--- centDHSbloodDMC / CBS_svr_nu0.25 ---
+  Neutro     Pre= 78.56%  Post= 83.14%  delta= +3.15pp  p=0.0008497
+  Mono       Pre= 10.14%  Post=  8.07%  delta= -1.44pp  p=0.0004331
+  NK         Pre=  4.11%  Post=  3.28%  delta= -0.59pp  p=0.05031
+  CD8T       Pre=  3.39%  Post=  2.51%  delta= +0.00pp  p=0.08835
+  CD4T       Pre=  2.97%  Post=  2.25%  delta= +0.00pp  p=0.1215
+  Eosino     Pre=  0.45%  Post=  0.37%  delta= +0.00pp  p=0.7897
+  B          Pre=  0.39%  Post=  0.38%  delta= +0.00pp  p=0.5503
+
+--- centDHSbloodDMC / CBS_svr_nu0.5 ---
+  Neutro     Pre= 78.68%  Post= 83.64%  delta= +3.50pp  p=0.0003464
+  Mono       Pre=  9.41%  Post=  7.50%  delta= -1.15pp  p=0.0003295
+  NK         Pre=  4.25%  Post=  3.44%  delta= -0.49pp  p=0.06863
+  CD8T       Pre=  3.76%  Post=  2.44%  delta= +0.00pp  p=0.007793
+  CD4T       Pre=  3.09%  Post=  2.20%  delta= +0.00pp  p=0.1302
+  B          Pre=  0.63%  Post=  0.50%  delta= +0.00pp  p=0.2712
+  Eosino     Pre=  0.18%  Post=  0.28%  delta= +0.00pp  p=0.4838
+
+--- centDHSbloodDMC / CP_nnls_norm ---
+  Neutro     Pre= 74.20%  Post= 79.02%  delta= +4.14pp  p=0.0005529
+  Mono       Pre= 10.34%  Post=  8.89%  delta= -0.86pp  p=0.0005141
+  NK         Pre=  6.57%  Post=  5.49%  delta= -1.00pp  p=0.004569
+  CD4T       Pre=  5.38%  Post=  4.10%  delta= -0.05pp  p=0.04434
+  CD8T       Pre=  2.11%  Post=  1.30%  delta= +0.00pp  p=0.008353
+  B          Pre=  1.35%  Post=  1.03%  delta= +0.00pp  p=0.05413
+  Eosino     Pre=  0.04%  Post=  0.18%  delta= +0.00pp  p=0.2249
+
+--- centDHSbloodDMC / CP_penalty_K100 ---
+  Neutro     Pre= 73.27%  Post= 77.85%  delta= +3.87pp  p=0.0003827
+  Mono       Pre=  9.43%  Post=  8.04%  delta= -0.77pp  p=0.001024
+  CD8T       Pre=  6.73%  Post=  5.36%  delta= -0.56pp  p=0.0218
+  NK         Pre=  6.46%  Post=  5.70%  delta= -0.85pp  p=0.01982
+  CD4T       Pre=  2.38%  Post=  1.56%  delta= +0.00pp  p=0.1123
+  B          Pre=  1.65%  Post=  1.31%  delta= -0.04pp  p=0.05828
+  Eosino     Pre=  0.03%  Post=  0.14%  delta= +0.00pp  p=0.1441
+
+--- centDHSbloodDMC / CP_penalty_K1000 ---
+  Neutro     Pre= 73.29%  Post= 77.88%  delta= +3.88pp  p=0.0003733
+  Mono       Pre=  9.43%  Post=  8.03%  delta= -0.77pp  p=0.001001
+  CD8T       Pre=  6.77%  Post=  5.39%  delta= -0.56pp  p=0.02104
+  NK         Pre=  6.46%  Post=  5.70%  delta= -0.88pp  p=0.02088
+  CD4T       Pre=  2.36%  Post=  1.54%  delta= +0.00pp  p=0.1156
+  B          Pre=  1.66%  Post=  1.31%  delta= -0.04pp  p=0.05828
+  Eosino     Pre=  0.03%  Post=  0.14%  delta= +0.00pp  p=0.1441
+
+--- centDHSbloodDMC / RPC_irls ---
+  Neutro     Pre= 74.25%  Post= 78.81%  delta= +3.84pp  p=0.000639
+  CD8T       Pre=  8.59%  Post=  6.92%  delta= -1.58pp  p=0.001689
+  Mono       Pre=  7.55%  Post=  5.79%  delta= -1.47pp  p=0.0005453
+  NK         Pre=  4.99%  Post=  4.54%  delta= -0.71pp  p=0.09066
+  B          Pre=  2.62%  Post=  2.34%  delta= -0.41pp  p=0.09455
+  CD4T       Pre=  1.97%  Post=  1.40%  delta= +0.00pp  p=0.1275
+  Eosino     Pre=  0.03%  Post=  0.20%  delta= +0.00pp  p=0.1441
