@@ -51,7 +51,8 @@ immune_by_dmr <- function(tb) {
 
 sets <- c("unadjusted"            = "bumphunter_DMR_unadjusted.csv",
           "adj_dNeu"              = "bumphunter_DMR_adj_dNeu.csv",
-          "adj_dNeu_Eos_Baso"     = "bumphunter_DMR_adj_dNeu_Eos_Baso.csv")
+          "adj_dNeu_Eos_Baso"     = "bumphunter_DMR_adj_dNeu_Eos_Baso.csv",
+          "adj_3lineage"          = "bumphunter_DMR_adj_3lineage.csv")
 
 for (nm in names(sets)) {
   tb  <- read.csv(file.path(GSE, sets[[nm]]), stringsAsFactors = FALSE)

@@ -14,7 +14,7 @@
 |---|---|---|---|
 | **T1-1** | Reference [41] Evered 2018 carried the wrong PMID (30179813 = an unrelated chlorinated-paraffin paper) and a fabricated author list ("Whittaker P, Pu Y"), while omitting DeKosky / Rasmussen / Oh / Crosby / Berger / Eckenhoff. | Entire entry replaced with the verified record: *Anesthesiology* 2018;129(5):872–879, doi:10.1097/ALN.0000000000002334, **PMID 30325806**, with the correct Nomenclature Consensus Working Group author list. | References [41] |
 | **T1-2** | BMC/Springer Nature requires that large-language-model use be documented in the Methods (or an equivalent location); absent from manuscript and cover letter. | New subsection **"Use of artificial intelligence"** added under Declarations, stating the assistant was used for language polishing / literature organisation / drafting, that all analyses and interpretations were designed, executed and verified by the author (Y.Y.), that no AI tool generated primary data or ran autonomous inferential statistics, and that the author takes full responsibility. A matching paragraph was added to the cover letter. | Declarations; `manuscript/cover_letter.md` |
-| **T1-3** | "46–61% of DMRs composition-attributable" was presented as a sensitivity envelope, but its two ends come from **two different covariate specifications** (neutrophil-only vs granulocyte-subtype); and the immune-overlapping proportion was actually **flat** (0.59% → 0.47–0.50%), so the removed burden is a *global* post-surgical shift, not a disproportionately immune one. | Re-framed at every occurrence (Abstract, Results, Figure 2 legend, Limitations) as a **descriptive upper bound, not a confidence interval and not a sensitivity interval**; the flat immune proportion is now stated explicitly wherever the percentage appears; the immune-specific composition conclusion is explicitly assigned to the probe-level |t| enrichment test (2.46 × 10⁻⁴ → 0.724 / 0.55) rather than to DMR counts; every DMR count now carries the "B = 0, no permutation, hence descriptive" tag and the sentence "the 46–61% reduction is a descriptive proportion, not an inferential attribution". | Abstract; Results (Layer A); Fig. 2 legend; Limitations |
+| **T1-3** | "46–61% of DMRs composition-attributable" was presented as a sensitivity envelope, but its two ends come from **two different covariate specifications** (neutrophil-only vs granulocyte-subtype); and the immune-overlapping proportion was actually **flat** (0.59% → 0.47–0.50%), so the removed burden is a *global* post-surgical shift, not a disproportionately immune one. | **(a) Text.** Re-framed at every occurrence (Abstract, Results, Figure 2 legend, Limitations, cover letter). The 46–61% band is now explicitly described as the **bracket produced by switching specifications, not a sensitivity interval for one model**; the flat immune proportion is stated wherever the percentage appears; the immune-specific conclusion is assigned to the probe-level \|t\| test (2.46 × 10⁻⁴ → 0.724 / 0.55), not to DMR counts; every DMR count carries "B = 0, no permutation, hence descriptive". **(b) Analysis.** The panel's suggested supplemental run was **also performed** — see the dedicated section below. | Abstract; Results (Layer A); Fig. 2 legend; Limitations; cover letter; new artefacts |
 | **T1-4** | Set-1 (49 genes / 737 probes, limma moderated t, unadjusted, p = 0.041) and Set-2 (83 genes / 1,195 probes, OLS-on-delta t, 0.296 / 0.098 / 0.141) are **not comparable** (different gene set *and* different t); the hedge existed but was easy to miss. | Inline specification added at the first occurrence of p = 0.041 (Set-1, unadjusted, limma moderated t, no composition-adjusted analogue on that exact definition); **new Table 1** "Layer-A methylation signal — all reported tests (not interchangeable)" added, with columns *Test / Gene set / t-statistic definition / Composition-adjusted? / p*; Conclusions and Limitations repeat that Set-2 can neither confirm nor refute Set-1. | Results (Layer A); new **Table 1**; Limitations |
 
 ---
@@ -83,7 +83,33 @@
 | `analysis/adjust/adjust_summary.csv` | Two columns added (`mwu_p_immune_vs_bg`, `median_ratio_immune_over_bg`); existing values unchanged. |
 | `README.md`, `preregistration_plan_draft.md` | Terminology aligned to "two-axis hypothesis" / "candidate-modifiable". |
 
+---
+
+## Supplemental analysis performed for T1-3: unified three-lineage DMR adjustment
+
+The panel flagged that the DMR-level adjustment had been run with **granulocyte-subtype** covariates (ΔNeu alone, then ΔNeu+ΔEos+ΔBaso) while the probe-level adjustment used the **three-lineage** set (ΔNeu+Lymph+Mono), i.e. the two levels were never compared under one specification. We therefore re-ran bumphunter on the same 65 paired ΔM profiles with `~ aNeu + lymphoid + aMono`, in a dedicated script (`analysis/layerA_bumphunter_3lineage.R`, `set.seed(12345)`, B = 0) that **re-runs the unadjusted model first as a self-check**.
+
+**Self-check:** unadjusted reproduced **13,357 DMRs / 79 immune-overlapping / 48 immune genes** — identical to the published figures, so the new run is not a silent pipeline change.
+
+**Result under the single three-lineage specification:**
+
+| Model | Covariates | DMRs (L ≥ 3) | Immune-overlapping DMRs | Distinct immune genes | % immune |
+|---|---|---|---|---|---|
+| unadjusted | none | 13,357 | 79 | 48 | 0.59 |
+| adj_dNeu | ΔNeu | 5,153 | 24 | 21 | 0.47 |
+| adj_dNeu_Eos_Baso | ΔNeu+ΔEos+ΔBaso | 7,263 | 36 | 29 | 0.50 |
+| **adj_3lineage (new)** | **ΔNeu+lymphoid+ΔMono** | **6,628** | **34** | **27** | **0.51** |
+
+**What this settles:**
+1. Under one specification the composition-attributable share is **50.4%** — squarely inside the previously quoted 46–61% bracket, so the bracket did not misstate the magnitude; what was wrong was presenting it as a sensitivity envelope. The manuscript now quotes **~50% as the single-specification estimate** and 46–61% only as the spread across specifications.
+2. The **immune proportion is flat under all three specifications** (0.59% → 0.47% / 0.50% / 0.51%). This is now a like-for-like result rather than an inference across mismatched covariate sets, and it is the load-bearing evidence for "adjustment removes a global post-surgical methylation shift, not a disproportionate immune component".
+3. **21 of the 48** unadjusted immune genes survive the three-lineage adjustment (shared: BCL3, CCL5, CD14, CXCL2, CXCL8, FOS, IKBKE, IL6R, IRAK4, IRF8, MAP3K7, MAPK14, NFKBIA, NFKBIZ, S100A9, SOCS1, STAT1, STAT3, TNFAIP3, TNFRSF1A, TNIP1). Lost: IL6, IL10, IL1B, IL1RN, TNF, IFNG, IRF1, IRF7, TLR4, NLRP3 and 16 others — i.e. the canonical acute-cytokine genes are precisely the composition-driven ones.
+
+**New / amended artefacts:** `analysis/layerA_bumphunter_3lineage.R`, `bumphunter_DMR_adj_3lineage.csv`, `bumphunter_3lineage_summary.csv`, `bumphunter_immune_gene_before_after_3lineage.csv`, `bumphunter_DMR_adj_3lineage_immune_overlap.csv`, `layerA_bumphunter_3lineage.log`; `bumphunter_adjusted_summary.csv` extended with the fourth row; Figure 2 regenerated so panel D shows all four fits and panel C carries the exact p-values.
+
+---
+
 ## What was deliberately **not** done
 
-- **No new analysis layer.** The one optional addition the panel suggested — re-running the DMR-level composition adjustment with a single unified three-lineage (Neu+Lymph+Mono) covariate set — is **not** included. The text now carries the descriptive-upper-bound framing and the flat-immune-proportion caveat, which removes the over-claim without the re-run; if the editor or a reviewer asks for the unified-covariate sensitivity run, it can be produced from the existing pipeline.
+- **No new data layer and no new experiment.** The only analysis added is the unified-covariate DMR re-run above, which reuses the existing inputs.
 - **Zenodo not re-published.** DOI 10.5281/zenodo.22896443 is already published and cannot be appended to; a new version would mint a new DOI and needs the author's token. The FILES list is updated and the deposit collector validates at zero missing; the v1.1.0 deposit is scheduled for just before submission.

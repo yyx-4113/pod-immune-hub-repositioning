@@ -1,0 +1,3 @@
+"model","covariates","n_DMR_L3","immune_DMR","immune_genes","pct_immune","pct_DMR_left","pct_DMR_removed"
+"unadjusted","none (intercept only)",13357,79,48,0.59,100,0
+"adj_3lineage","aNeu + lymphoid + aMono",6628,34,27,0.51,49.6,50.4

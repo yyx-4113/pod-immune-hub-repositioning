@@ -1,0 +1,53 @@
+=== building per-subject paired M-value deltas ===
+subjects usable: 65 of 65 
+Delta matrix: 312514 x 65 
+3-lineage covariates present: aNeu + lymphoid + aMono 
+
+=== annotation (chr/pos/gene) ===
+final matrix: 312514 x 65 
+immune gene set: 83 
+
+================= unadjusted =================
+design: (Intercept) 
+raw bumps: 73825 
+DMRs with L>=3: 13357 
+immune-overlapping DMRs: 79 
+distinct immune genes hit: 48 
+
+   IL6R     TNF  CX3CR1    IRF8  S100A8 TNFAIP3    BCL3    CCL5   CXCL2  FCGR2A 
+      4       4       3       3       3       3       2       2       2       2 
+   IFNG    IL18 
+      2       2 
+
+================= adj_3lineage =================
+design: (Intercept) | aNeu | lymphoid | aMono 
+raw bumps: 65719 
+DMRs with L>=3: 6628 
+immune-overlapping DMRs: 34 
+distinct immune genes hit: 27 
+
+ NFKBIZ   IRAK4    IRF8     MYC   STAT3 TNFAIP3    BCL3    CCL5    CD14   CXCL2 
+      3       2       2       2       2       2       1       1       1       1 
+  CXCL8     FOS 
+      1       1 
+
+
+############ SUMMARY ############
+         model              covariates n_DMR_L3 immune_DMR immune_genes
+1   unadjusted   none (intercept only)    13357         79           48
+2 adj_3lineage aNeu + lymphoid + aMono     6628         34           27
+  pct_immune pct_DMR_left pct_DMR_removed
+1       0.59        100.0             0.0
+2       0.51         49.6            50.4
+
+--- SELF-CHECK (unadjusted must equal 13357 / 79 / 48) ---
+n_DMR_L3   : 13357 (expect 13357)
+immune_DMR : 79 (expect 79)
+imm_genes  : 48 (expect 48)
+SELF-CHECK PASSED: TRUE 
+
+immune genes still hit after 3-lineage adjustment: 21 of 48 
+shared: BCL3, CCL5, CD14, CXCL2, CXCL8, FOS, IKBKE, IL6R, IRAK4, IRF8, MAP3K7, MAPK14, NFKBIA, NFKBIZ, S100A9, SOCS1, STAT1, STAT3, TNFAIP3, TNFRSF1A, TNIP1 
+lost  : CCL2, CD68, CX3CR1, CXCL1, FCGR2A, IFNG, IKBKB, IL10, IL18, IL1B, IL1R1, IL1RN, IL6, IRF1, IRF7, ITGAX, LYZ, NLRP3, PTGS2, PYCARD, S100A8, SPI1, TLR1, TLR4, TLR6, TNF, TRAF6 
+
+=== DONE ===

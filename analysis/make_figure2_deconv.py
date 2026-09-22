@@ -175,15 +175,18 @@ axC.set_ylabel("Median $|t|$ of paired $\\Delta$M")
 axC.set_ylim(0, 1.22)
 axC.set_title("C  Probe level: immune enrichment is abolished", pad=15)
 axC.legend(frameon=False, loc="upper right", fontsize=6.5)
-axC.text(-0.02, 1.015, "unadjusted MWU p = 2.5e-4;  adj. $\\Delta$Neu p = 0.72",
+axC.text(-0.02, 1.015,
+         "MWU p: 2.46e-4 (unadj.) $\\rightarrow$ 0.724 ($\\Delta$Neu) / 0.55 (3 lin.)",
          transform=axC.transAxes, fontsize=6.5, color="#5F5E5A", va="bottom")
 
 # ---------- D: DMR burden before/after adjustment ----------
 dl = {"unadjusted": "Unadjusted", "adj_dNeu": "Adj. $\\Delta$Neu",
-      "adj_dNeu_Eos_Baso": "Adj. $\\Delta$Neu\n+$\\Delta$Eos+$\\Delta$Baso"}
+      "adj_dNeu_Eos_Baso": "Adj. $\\Delta$Neu\n+$\\Delta$Eos+$\\Delta$Baso",
+      "adj_3lineage": "Adj. 3 lineages\n(same set as\npanel C)"}
 dmr["lab"] = dmr["model"].map(dl)
-dmr = dmr.set_index("model").loc[["unadjusted", "adj_dNeu", "adj_dNeu_Eos_Baso"]].reset_index()
-xs = np.arange(3)
+dmr = dmr.set_index("model").loc[
+    ["unadjusted", "adj_dNeu", "adj_dNeu_Eos_Baso", "adj_3lineage"]].reset_index()
+xs = np.arange(len(dmr))
 w = 0.36
 b1 = axD.bar(xs - w / 2, dmr.n_DMR_L3, w, color=C_ALL, label="All DMRs")
 b2 = axD.bar(xs + w / 2, dmr.immune_DMR, w, color=C_IMM, label="Immune-gene DMRs")
