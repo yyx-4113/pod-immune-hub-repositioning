@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the associated manuscript."
-title: "Postoperative Delirium two-axis model: APOE epsilon4 susceptibility and peripheral immune state axis - multi-omics integration and in-silico drug-repositioning reproducibility package"
-abstract: "Analysis code and derived result tables for the integrated epigenomic (GSE330869, EPIC v2), transcriptomic (GSE163943), single-cell (GSE252572), GWAS (Armstrong et al., PLOS Medicine 2026), and LINCS L1000 in-silico drug-repositioning pipeline supporting a two-axis model of postoperative delirium: a constitutive APOE epsilon4 susceptibility axis and a modifiable peripheral immune activation state axis."
+title: "Postoperative Delirium two-axis hypothesis: APOE epsilon4 constitutive susceptibility and peripheral immune state axis — multi-omics integration and in-silico, hypothesis-generating drug-repositioning reproducibility package"
+abstract: "Analysis code and derived result tables for the integrated epigenomic (GSE330869, EPIC v2), transcriptomic (GSE163943), single-cell (GSE252572), GWAS (Armstrong et al., PLOS Medicine 2026), and LINCS L1000 in-silico drug-repositioning pipeline supporting a two-axis hypothesis for postoperative delirium: a constitutive APOE epsilon4 susceptibility axis and a modifiable peripheral immune state axis."
 authors:
   - family-names: Yang
     given-names: Yongxin
