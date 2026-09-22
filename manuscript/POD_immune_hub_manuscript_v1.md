@@ -163,7 +163,7 @@ POD — postoperative delirium; POCD — postoperative cognitive dysfunction; PN
 
 **Consent for publication.** Not applicable.
 
-**Data availability.** All analysis code, intermediate result tables, the LINCS gene-set libraries used, and a MANIFEST.sha256 checksum file are publicly available in the GitHub repository at https://github.com/yyx-4113/pod-immune-hub-repositioning; a permanent, versioned Zenodo archive (DOI to be assigned upon acceptance) will mirror the tagged release. Source data: GSE163943, GSE252572, GSE330869 (NCBI GEO); Armstrong POD GWAS summary statistics (Armstrong et al., *PLOS Medicine* 2026, DOI 10.1371/journal.pmed.1004963; summary-statistics data DOI 10.5523/bris.1m83zai2e26yq2lro3tixz9kqq); LINCS L1000 consensus signatures (Enrichr / maayanlab.cloud).
+**Data availability.** All analysis code, intermediate result tables, the LINCS gene-set libraries used, and a MANIFEST.sha256 checksum file are publicly available in the GitHub repository at https://github.com/yyx-4113/pod-immune-hub-repositioning; a permanent, versioned Zenodo archive (DOI: 10.5281/zenodo.22896443) mirrors the tagged release. Source data: GSE163943, GSE252572, GSE330869 (NCBI GEO); Armstrong POD GWAS summary statistics (Armstrong et al., *PLOS Medicine* 2026, DOI 10.1371/journal.pmed.1004963; summary-statistics data DOI 10.5523/bris.1m83zai2e26yq2lro3tixz9kqq); LINCS L1000 consensus signatures (Enrichr / maayanlab.cloud).
 
 **Funding.** None.
 
