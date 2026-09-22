@@ -1,7 +1,7 @@
-model,group,n_probes,n_FDR05,median_abs_t
-M0_unadjusted,immune,1195,0,0.9679440468939893
-M0_unadjusted,background,311319,11,0.9026500909567853
-MA_adj_dNeu,immune,1195,0,0.6499593305963176
-MA_adj_dNeu,background,311319,0,0.6563559364015364
-MB_adj_3lineage,immune,1195,0,0.6769118218783866
-MB_adj_3lineage,background,311319,0,0.6572357898707282
+model,group,n_probes,n_FDR05,median_abs_t,mwu_p_immune_vs_bg,median_ratio_immune_over_bg
+M0_unadjusted,immune,1195,0,0.9679440468939893,0.0002463,1.072
+M0_unadjusted,background,311319,11,0.9026500909567853,0.0002463,1.072
+MA_adj_dNeu,immune,1195,0,0.6499593305963176,0.7244,0.990
+MA_adj_dNeu,background,311319,0,0.6563559364015364,0.7244,0.990
+MB_adj_3lineage,immune,1195,0,0.6769118218783866,0.5500,1.030
+MB_adj_3lineage,background,311319,0,0.6572357898707282,0.5500,1.030

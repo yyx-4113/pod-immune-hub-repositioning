@@ -1,6 +1,6 @@
 # OSF Preregistration — Postoperative Delirium Immune Hub & Virtual-Knockout Drug Repositioning
 
-> **Status:** Preregistration plan (recommended, non-blocking). This document is the a-priori analytic blueprint for the manuscript *"Postoperative delirium two-axis model: APOE ε4 constitutive susceptibility and a peripheral immune state axis with in-silico drug repositioning"*.
+> **Status:** Preregistration plan (recommended, non-blocking). This document is the a-priori analytic blueprint for the manuscript *"Postoperative delirium two-axis hypothesis: APOE ε4 constitutive susceptibility and a peripheral immune state axis with in-silico drug repositioning"*.
 > **Version:** 1.0.0 (2026-09-22)
 > **Corresponding author:** Yongxin Yang (ORCID 0009-0004-9698-6552), B.M. — no graduate/professional title (e.g. MD/PhD) is asserted. Department of Anesthesiology, The Second Affiliated Hospital of Fujian University of Traditional Chinese Medicine, Fuzhou, Fujian 350003, China.
 > **Code & data:** GitHub (public) `https://github.com/yyx-4113/pod-immune-hub-repositioning`; `MANIFEST.sha256` accompanies every tagged release; Zenodo DOI to be minted upon acceptance.
@@ -10,7 +10,7 @@
 
 ## 1. Study identification
 
-- **Title:** Postoperative delirium two-axis model: APOE ε4 constitutive susceptibility and a peripheral immune state axis with in-silico drug repositioning
+- **Title:** Postoperative delirium two-axis hypothesis: APOE ε4 constitutive susceptibility and a peripheral immune state axis with in-silico drug repositioning
 - **Study type:** Observational reanalysis of public omics + in-silico perturbation (LINCS) + genetic epidemiology (MR/PRS). No randomization, no prospective enrollment in the analytic core.
 - **Registration intention:** Preregister the a-priori hypotheses, analytic plan, decision gates, positive controls, and expected-null specifications **before** journal submission, to prevent post-hoc rationalization (p-hacking / HARKing).
 - **Update rule:** Any deviation from this plan after registration will be logged in `PROGRESS.md` and in the GitHub release notes under an explicit "Deviations from preregistration" heading.
@@ -19,7 +19,7 @@
 
 ## 2. Background & a-priori hypotheses
 
-Postoperative delirium (POD) has a strong but partly unexplained heritable component. A 2026 genome-wide association study (Armstrong et al., *PLOS Medicine*) localized essentially all genome-wide significant POD signal to the chromosome-19 *APOE* region, implying a **constitutive (trait) susceptibility axis**. Independently, perioperative systemic inflammation is a long-standing mechanistic candidate, implying a **state (modifiable) axis**. We pre-specify a **two-axis model**:
+Postoperative delirium (POD) has a strong but partly unexplained heritable component. A 2026 genome-wide association study (Armstrong et al., *PLOS Medicine*) localized essentially all genome-wide significant POD signal to the chromosome-19 *APOE* region, implying a **constitutive (trait) susceptibility axis**. Independently, perioperative systemic inflammation is a long-standing mechanistic candidate, implying a **state (candidate-modifiable) axis**. We pre-specify a **two-axis working hypothesis**:
 
 - **H1 (constitutive / hypothesis-generating, to be confirmed via public GWAS):** The *APOE* ε4 allele is the dominant germline POD susceptibility locus; non-APOE immune loci do **not** survive genome-wide correction once the chr19 block is accounted for.
 - **H2 (state / primary empirical hypothesis):** Major surgery induces a peripheral immune epigenomic shift in POD cases — specifically a neutrophil-predominant / lymphocyte-diminished leukocyte composition change accompanied by NF-κB / leukocyte-immunity CpG methylation movement — that is detectable as a **pre→post paired methylation signature** in whole blood.

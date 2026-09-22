@@ -2,7 +2,7 @@
 
 Reproducible analysis package for:
 
-> Yang Y. A two-axis model of postoperative delirium: APOE ε4 constitutive susceptibility and a peripheral immune state axis supported by multi-omics integration and in-silico drug repositioning. *Journal of Neuroinflammation* (submitted).
+> Yang Y. A two-axis hypothesis for postoperative delirium: APOE ε4 constitutive susceptibility and a peripheral immune state axis supported by multi-omics integration and in-silico drug repositioning. *Journal of Neuroinflammation* (submitted).
 
 This repository contains the analysis code, derived result tables, the LINCS
 gene-set libraries used, and a `MANIFEST.sha256` checksum file for the
