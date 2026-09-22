@@ -50,7 +50,7 @@ IMMUNE_GENES <- c("TNF","TNFRSF1A","TNFRSF1B","IL1B","IL1A","IL6","IL6R","IL10",
   "HLA-DRA","HLA-DRB1","PTGS2","NOS2","IL6ST","MAP3K7","MYC","BCL3","TNFAIP3","RELN")
 probe_genes <- strsplit(anno[rownames(top), "UCSC_RefGene_Name"], "[;/]+")
 immune_mask <- sapply(probe_genes, function(g) any(na.omit(g) %in% IMMUNE_GENES))
-mw <- wilcox.test(top$t[immune_mask], top$t[!immune_mask], alternative = "greater")
+mw <- wilcox.test(top$t[immune_mask], top$t[!immune_mask], alternative = "two.sided")
 mw_p <- mw$p.value
 message("[fig] immune probes=", sum(immune_mask), " MWU p=", format.pval(mw_p, digits = 3))
 
@@ -98,7 +98,7 @@ lines(di, col = "#C0392B", lwd = 1.6)
 abline(v = 0, lty = 2, col = "gray40")
 legend("topleft", legend = c("immune", "background"), col = c("#C0392B", "gray50"),
        lwd = 1.6, cex = 0.6, bty = "n")
-mtext(paste0("immune shift (one-sided MWU) p = ", format.pval(mw_p, digits = 3)),
+mtext(paste0("immune shift (two-sided MWU) p = ", format.pval(mw_p, digits = 3)),
       side = 3, line = 0.2, adj = 1, cex = 0.7)
 dev.off()
 cat("FIGURE_WRITTEN\n")
