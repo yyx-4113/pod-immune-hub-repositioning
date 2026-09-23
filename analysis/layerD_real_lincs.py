@@ -270,11 +270,10 @@ def control_set_enrichment(dl: pd.DataFrame, controls: list, n_perm: int = 20000
     RANK-based class test: mean rank-percentile of the control set vs the same
     statistic for random sets of equal size drawn from all perturbagens.
     """
-    found = [c for c in controls if (dl["perturbagen"].str.contains(c, regex=False)).any()]
+    found = [c for c in controls if (dl["perturbagen"] == c).any()]
     if not found:
         return {"n_controls_found": 0}
-    idx = dl.index[dl["perturbagen"].str.contains("|".join(map(re.escape, found)),
-                                                  regex=True, na=False)]
+    idx = dl.index[dl["perturbagen"].isin(found)]
     if len(idx) == 0:
         return {"n_controls_found": 0}
     pct = 100.0 * (1.0 - (np.asarray(idx, dtype=float) + 1.0) / len(dl))

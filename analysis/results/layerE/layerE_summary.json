@@ -58,7 +58,7 @@
       "gene": "LTF",
       "uniprot": "P02788",
       "protein": "Lactotransferrin",
-      "n_pdb_entries": 25,
+      "n_pdb_entries": 10,
       "pdb_ids": "1B0L;1BKA;1CB6;1DSN;1EH3;1FCK;1H43;1H44;1H45;1HSE",
       "dockable_experimental": true,
       "note": ""

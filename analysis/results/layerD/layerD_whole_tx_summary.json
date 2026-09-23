@@ -181,7 +181,7 @@
       "n_controls_found": 0
     },
     "crispr_ko": {
-      "n_controls_found": 18,
+      "n_controls_found": 12,
       "controls": [
         "nfkb1",
         "rela",
@@ -196,12 +196,12 @@
         "adora3",
         "col18a1"
       ],
-      "mean_percentile_controls": 33.21,
+      "mean_percentile_controls": 31.44,
       "null_mean_percentile": 50.01,
       "null_sd": 6.8,
-      "z": -2.472,
-      "perm_p_one_sided": 0.9934003299835008,
-      "mannwhitney_p": 0.9932572775283933,
+      "z": -2.224,
+      "perm_p_one_sided": 0.9873,
+      "mannwhitney_p": 0.9873,
       "n_perm": 20000
     }
   },
